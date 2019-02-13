@@ -1,7 +1,7 @@
 <template>
 <div>
    <h1>
-       新页面重新建立vue文件
+       新页面
    </h1>
 </div>
 </template>
