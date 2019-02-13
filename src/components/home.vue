@@ -1,7 +1,7 @@
 <template>
 <div>
    <h1>
-       新页面重新建立好
+       新页面重新建立好le
    </h1>
 </div>
 </template>
