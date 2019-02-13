@@ -1,6 +1,8 @@
 <template>
 <div>
- <h1> 好</h1>
+   <h1>
+       新页面重新建立好
+   </h1>
 </div>
 </template>
 
