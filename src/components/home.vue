@@ -1,7 +1,7 @@
 <template>
 <div>
    <h1>
-       新页面重新建立好le
+       新页面重新建立hhhhhhh
    </h1>
 </div>
 </template>
@@ -24,4 +24,5 @@ export default {
 
 </script>
 <style lang='scss' scoped>
+
 </style>
