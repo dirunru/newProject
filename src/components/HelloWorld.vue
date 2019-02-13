@@ -2,7 +2,7 @@
   <div class="hello">
     <h1 class="animated flash">{{ msg }}</h1>
     <h2>Essential Links</h2>
-    <el-button>生气了</el-button>
+    <el-button>哈哈哈</el-button>
 <nav class="navbar navbar-default" role="navigation">
 	<div class="container-fluid"> 
 	<div class="navbar-header">
