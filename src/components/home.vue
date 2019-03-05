@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-container>
-      <el-header>Header</el-header>
+      <el-header>{{LocationCity}}</el-header>
       <el-container>
         <el-aside width="200px">
           <el-menu class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" router>
@@ -52,11 +52,14 @@
   export default {
     data() {
       return {
-
+        LocationCity: '正在定位~'
       };
     },
     created() {
 
+    },
+    mounted() {
+      this.city();
     },
     methods: {
       handleOpen(key, keyPath) {
@@ -65,10 +68,20 @@
       handleClose(key, keyPath) {
         console.log(key, keyPath);
       },
-      selectLocation(location) {
-        console.log(location)
-        console.log(parseFloat(location.lng))
-        console.log(parseFloat(location.lat))
+      city() { //定义获取城市方法
+        const geolocation = new BMap.Geolocation();
+        var _this = this
+        geolocation.getCurrentPosition(function getinfo(position) {
+          let province = position.address.province; //获取省份信息
+          let city = position.address.city|| ''; //获取城市信息
+          let area = position.address.district || '';//区
+          let street = (position.address.street || '') + (position.address.streetNumber || '') // 街道
+          _this.LocationCity = province + city + area + street + '街道';
+        }, function (e) {
+          _this.LocationCity = "定位失败"
+        }, {
+          provider: 'baidu'
+        });
       }
     }
   }
