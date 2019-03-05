@@ -17,10 +17,18 @@
                 <el-menu-item index="/vueMap">vue项目使用地图</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
-            <el-menu-item index="2">
-              <i class="el-icon-menu"></i>
-              <span slot="title">导航二</span>
-            </el-menu-item>
+            <el-submenu index="2">
+              <template slot="title">
+                <i class="el-icon-menu"></i>
+                <span>导航二</span>
+              </template>
+              <el-menu-item-group>
+                <el-menu-item index="/getMap">获取经纬度</el-menu-item>
+                <el-menu-item index="">待定</el-menu-item>
+                <el-menu-item index="">待定</el-menu-item>
+                <el-menu-item index="">待定</el-menu-item>
+              </el-menu-item-group>
+            </el-submenu>
             <el-menu-item index="3">
               <i class="el-icon-document"></i>
               <span slot="title">导航三</span>
@@ -58,8 +66,8 @@
         console.log(key, keyPath);
       },
       selectLocation(location) {
-        console.log(location) 
-        console.log(parseFloat(location.lng)) 
+        console.log(location)
+        console.log(parseFloat(location.lng))
         console.log(parseFloat(location.lat))
       }
     }

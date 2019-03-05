@@ -31,6 +31,12 @@ export default new Router({
         path: 'vueMap',
         name: 'vueMap',
         component: resolve => require(['@/components/vueMap/vueMap.vue'], resolve),
+      },
+       // vue项目使用地图,获取经纬度
+       {
+        path: 'getMap',
+        name: 'getMap',
+        component: resolve => require(['@/components/getMap/getMap.vue'], resolve),
       }
     ]
   }]
