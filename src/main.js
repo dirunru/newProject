@@ -4,7 +4,6 @@ import App from './App'
 import router from './router'
 import Cookies from 'Cookies'
 
-
 Vue.prototype.Cookies = Cookies
 
 import animated from  'animate.css'

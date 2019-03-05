@@ -4,17 +4,17 @@
       <el-header>Header</el-header>
       <el-container>
         <el-aside width="200px">
-          <el-menu class="el-menu-vertical-demo"  @open="handleOpen" @close="handleClose" router>
-            <el-submenu index="/">
+          <el-menu class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" router>
+            <el-submenu index="1">
               <template slot="title">
                 <i class="el-icon-location"></i>
                 <span>导航一</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="/HelloWorld">选项1</el-menu-item>
-                <el-menu-item index="1-2">选项2</el-menu-item>
-                <el-menu-item index="1-3">选项3</el-menu-item>
-                <el-menu-item index="1-4">选项1</el-menu-item>
+                <el-menu-item index="/HelloWorld">bootstrap</el-menu-item>
+                <el-menu-item index="/practice_one">JSON字符串获取值</el-menu-item>
+                <el-menu-item index="/fullCreeen">全屏和退出全屏</el-menu-item>
+                <el-menu-item index="/vueMap">vue项目使用地图</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
             <el-menu-item index="2">
@@ -43,14 +43,24 @@
 <script>
   export default {
     data() {
-      return {};
+      return {
+
+      };
+    },
+    created() {
+
     },
     methods: {
-       handleOpen(key, keyPath) {
+      handleOpen(key, keyPath) {
         console.log(key, keyPath);
       },
       handleClose(key, keyPath) {
         console.log(key, keyPath);
+      },
+      selectLocation(location) {
+        console.log(location) 
+        console.log(parseFloat(location.lng)) 
+        console.log(parseFloat(location.lat))
       }
     }
   }

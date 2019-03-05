@@ -2,6 +2,7 @@
   <div class="hello">
     <h1 class="animated flash">{{ msg }}</h1>
     <h2>Essential Links</h2>
+    <h3>引入的是外部的.js文件</h3>
     <el-button>哈哈哈第一次</el-button>
   </div>
 </template>
@@ -11,7 +12,7 @@
     name: 'HelloWorld',
     data() {
       return {
-        msg: 'Welcome to Your Vue.js App'
+        msg: '实验bootstrap和animated在vue中的引入和应用'
       }
     },
     mounted() {
