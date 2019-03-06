@@ -72,6 +72,7 @@
         const geolocation = new BMap.Geolocation();
         var _this = this
         geolocation.getCurrentPosition(function getinfo(position) {
+          console.log(position);
           let province = position.address.province; //获取省份信息
           let city = position.address.city|| ''; //获取城市信息
           let area = position.address.district || '';//区

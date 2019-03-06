@@ -19,7 +19,7 @@
     mounted() {
       this.getValue();
       this.getJsonValue();
-    },
+  },
     methods: {
       getValue() {
         for (var key in this.json) {
@@ -30,7 +30,7 @@
         $.each(this.json ,(i)=>{
             console.log('this.json[i]: ', this.json[i]);
         })
-      },
+      }
     }
   }
 
