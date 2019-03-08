@@ -1,0 +1,466 @@
+/* 录制 */
+.rec_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/rec_start.svg') center center no-repeat;
+}
+
+.rec_img:hover {
+    background: url('~@/../static/image/table/rec_hover.svg') center center no-repeat;
+}
+
+.rec_img:focus {
+    background: url('~@/../static/image/table/rec_click.svg') center center no-repeat;
+}
+.rec_img.disable {
+    background: url('~@/../static/image/table/rec_disable.svg') center center no-repeat;
+}
+
+/* 分享 */
+.share_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/share_start.svg') center center no-repeat;
+}
+
+.share_img:hover {
+    background: url('~@/../static/image/table/share_hover.svg') center center no-repeat;
+}
+
+.share_img:focus {
+    background: url('~@/../static/image/table/share_click.svg') center center no-repeat;
+}
+
+/* 授权 */
+.to_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/to_start.svg') center center no-repeat;
+}
+
+.to_img:hover {
+    background: url('~@/../static/image/table/to_hover.svg') center center no-repeat;
+}
+
+.to_img:focus {
+    background: url('~@/../static/image/table/to_click.svg') center center no-repeat;
+}
+
+/* 统计 */
+.count_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/count_start.svg') center center no-repeat;
+}
+
+.count_img:hover {
+    background: url('~@/../static/image/table/count_hover.svg') center center no-repeat;
+}
+
+.count_img:focus {
+    background: url('~@/../static/image/table/count_click.svg') center center no-repeat;
+}
+
+/* 更多 */
+.more_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/more_start.svg') center center no-repeat;
+}
+
+.more_img:hover {
+    background: url('~@/../static/image/table/more_hover.svg') center center no-repeat;
+}
+
+.more_img:focus {
+    background: url('~@/../static/image/table/more_click.svg') center center no-repeat;
+}
+
+/* 编辑 */
+.edit_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/edit_start.svg') center center no-repeat;
+}
+
+.edit_img:hover {
+    background: url('~@/../static/image/table/edit_hover.svg') center center no-repeat;
+}
+
+.edit_img:focus {
+    background: url('~@/../static/image/table/edit_click.svg') center center no-repeat;
+}
+
+.edit_img_disable {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/edit_disable.svg') center center no-repeat;
+}
+
+/* 删除 */
+.del_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/del_start.svg') center center no-repeat;
+}
+
+.del_img:hover {
+    background: url('~@/../static/image/table/del_hover.svg') center center no-repeat;
+}
+
+.del_img:focus {
+    background: url('~@/../static/image/table/del_click.svg') center center no-repeat;
+}
+.del_disable_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/del_disable.svg') center center no-repeat;
+}
+
+/* 课节 */
+.class_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/class_start.svg') center center no-repeat;
+}
+
+.class_img:hover {
+    background: url('~@/../static/image/table/class_hover.svg') center center no-repeat;
+}
+
+.class_img:focus {
+    background: url('~@/../static/image/table/class_click.svg') center center no-repeat;
+}
+
+.class_img_disable {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/class_disable.svg') center center no-repeat;
+}
+
+/* 查看 */
+.see_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/see_start.svg') center center no-repeat;
+}
+
+.see_img:hover {
+    background: url('~@/../static/image/table/see_hover.svg') center center no-repeat;
+}
+
+.see_img:focus {
+    background: url('~@/../static/image/table/see_click.svg') center center no-repeat;
+}
+.add_student{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/add_student.svg') center center no-repeat;
+}
+.add_student:hover{
+    background: url('~@/../static/image/table/add_student_hover.svg') center center no-repeat;
+}
+.add_student.disable{
+    background: url('~@/../static/image/table/add_student_disable.svg') center center no-repeat;
+}
+/* 播放 */
+.play_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/play_start.svg') center center no-repeat;
+}
+
+.play_img:hover {
+    background: url('~@/../static/image/table/play_hover.svg') center center no-repeat;
+}
+
+.play_img:focus {
+    background: url('~@/../static/image/table/play_click.svg') center center no-repeat;
+}
+
+/* 播放2 */
+.play_img_two {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/distribution/is_start_play.svg') center center no-repeat;
+}
+
+/* 查看 */
+.dow_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/dow_start.svg') center center no-repeat;
+}
+
+.dow_img:hover {
+    background: url('~@/../static/image/table/dow_hover.svg') center center no-repeat;
+}
+
+.dow_img:focus {
+    background: url('~@/../static/image/table/dow_click.svg') center center no-repeat;
+}
+
+/* 停止 */
+.stop_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/stop.svg') center center no-repeat;
+}
+
+/* 打call */
+.call_img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url('~@/../static/image/table/call.svg') center center no-repeat;
+}
+
+/* 拼团 */
+.collage_img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url('~@/../static/image/table/collage.svg') center center no-repeat;
+}
+
+/* 裂变海报 */
+.poster_img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url('~@/../static/image/table/poster.svg') center center no-repeat;
+}
+
+/* 警报 */
+.alert_img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url('~@/../static/image/table/alert_start.svg') center center no-repeat;
+}
+
+.alert_img_disable {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url('~@/../static/image/table/alert_one.svg') center center no-repeat;
+}
+
+/* 系统异常 */
+.windos_img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url('~@/../static/image/table/windos_disable.svg') center center no-repeat;
+}
+
+.windos_img_abnormal {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url('~@/../static/image/table/windos_start.svg') center center no-repeat;
+}
+
+/* 摄像头异常 */
+.camera_img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url('~@/../static/image/table/camera_disable.svg') center center no-repeat;
+}
+
+.camera_img_abnormal {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url('~@/../static/image/table/camera_start.svg') center center no-repeat;
+}
+
+/* 麦克风异常 */
+.microphone_img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url('~@/../static/image/table/microphone_disable.svg') center center no-repeat;
+}
+
+.microphone_img_abnormal {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url('~@/../static/image/table/microphone_start.svg') center center no-repeat;
+}
+
+/* 耳机异常 */
+.headset_img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url('~@/../static/image/table/headset_disable.svg') center center no-repeat;
+}
+
+.headset_img_abnormal {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url('~@/../static/image/table/headset_start.svg') center center no-repeat;
+}
+
+/* 分销 */
+.distribution_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/distribution.svg') center center no-repeat;
+}
+
+/* 加密 */
+.lock_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/lock.svg') center center no-repeat;
+}
+
+/* 人民币符号 */
+.rmb-icon {
+    font-family: 'PingFang SC',
+    'NSimSun',
+    'YouYuan';
+    font-size: 26px;
+    color: #676767;
+    font-weight: 100;
+}
+
+/* 人 */
+.people_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/student_list_start.svg') center center no-repeat;
+}
+
+.people_img:hover {
+    background: url('~@/../static/image/table/student_list_hover.svg') center center no-repeat;
+}
+
+.people_img:focus {
+    background: url('~@/../static/image/table/student_list_click.svg') center center no-repeat;
+}
+
+/* 详情 */
+.detail_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/detail_start.svg') center center no-repeat;
+}
+
+.detail_img:hover {
+    background: url('~@/../static/image/table/detail_start.svg') center center no-repeat;
+}
+
+.detail_img:focus {
+    background: url('~@/../static/image/table/detail_start.svg') center center no-repeat;
+}
+/* 添加 */
+.add_img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('~@/../static/image/table/add.svg') center center no-repeat;
+}
+
+
+/* 退费 */
+.out_rmb {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('~@/../static/image/out_rmb.png');
+    background-size: 100%;
+}
+
+.out_rmb:hover {
+    background-image: url('~@/../static/image/out_rmb_hover.png');
+    background-size: 100%;
+}
+
+.out_rmb:focus {
+    background-image: url('~@/../static/image/out_rmb.png');
+    background-size: 100%;
+}
+
+/* 眼睛 */
+.eye_icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('~@/../static/image/eye_start.png');
+    background-size: 100%;
+}
+
+.eye_icon:hover {
+    background-image: url('~@/../static/image/eye_hover.png');
+    background-size: 100%;
+}
+
+.eye_icon:focus {
+    background-image: url('~@/../static/image/eye_start.png');
+    background-size: 100%;
+}
+
+/* 添加合同 */
+.add_agreement {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('~@/../static/image/add_agreement_start.png');
+    background-size: 100%;
+}
+
+.add_agreement:hover {
+    background-image: url('~@/../static/image/add_agreement_hover.png');
+    background-size: 100%;
+}
+
+.add_agreement:focus {
+    background-image: url('~@/../static/image/add_agreement_start.png');
+    background-size: 100%;
+}
+
+/* 激活 */
+.activation {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('~@/../static/image/activation_start.png');
+    background-size: 100%;
+}
+
+.activation:hover {
+    background-image: url('~@/../static/image/activation_hover.png');
+    background-size: 100%;
+}
+
+.activation:focus {
+    background-image: url('~@/../static/image/activation_start.png');
+    background-size: 100%;
+}

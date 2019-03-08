@@ -1,0 +1,93 @@
+.el-tabs__item.is-active {
+    color: $c_red !important;
+}
+
+.el-tabs__item {
+    height: 45px !important;
+    line-height: 45px !important;
+}
+
+.el-tabs__item:hover {
+    color: $c_red !important;
+}
+
+.el-tabs--card>.el-tabs__header {
+    display: flex;
+    justify-content: center;
+    border-bottom: none !important;
+}
+
+.el-tabs--card>.el-tabs__header .el-tabs__nav {
+    border: 1px solid $c_ddd !important;
+    border-radius: 2px !important;
+}
+
+
+
+.el-tabs--border-card {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.el-tabs--border-card>.el-tabs__header {
+    border: none !important;
+    background-color: $c_fff;
+}
+
+.el-tabs--border-card>.el-tabs__header:active {
+    border: none !important;
+}
+
+.el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active {
+    border: none !important;
+    position: relative;
+
+}
+
+.el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active:after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: $c_red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.el-tabs--border-card>.el-tabs__content {
+    min-height: 628px !important;
+}
+
+.el-tabs--border-card>.el-tabs__header .el-tabs__item {
+    border: none !important;
+    box-sizing: border-box !important;
+}
+
+.el-tabs__content {
+    border-radius: 2px;
+}
+
+
+.Student_details .el-tabs__header,
+.Teacher_details .el-tabs__header,
+.Assistant_details .el-tabs__header,
+.My_assets .el-tabs__header {
+    margin: 0 0 20px !important;
+}
+
+.Order_record .el-tabs__header {
+    margin: 0 !important;
+}
+
+
+.Course_square_detail_page .el-tabs--border-card>.el-tabs__header {
+    background-color: #ffffff !important;
+}
+.editCourseBox{
+    .isSingle{
+        .el-tabs__nav-wrap.is-top{
+            display: none;
+        }
+    }
+
+}

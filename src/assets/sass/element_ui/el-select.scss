@@ -1,0 +1,39 @@
+.el-select .el-input .el-select__caret {
+    color: $c_999 !important;
+}
+
+.el-input--small .el-input__inner {
+    height: 35px !important;
+    line-height: 35px !important;
+}
+
+.el-select .el-input.is-focus .el-input__inner {
+    border-color: #EF334E;
+}
+
+.square_list .el-input--small .el-input__inner {
+    height: 33px !important;
+    line-height: 33px !important;
+    &:hover {
+        border: 1px solid #ffffff;
+    }
+}
+
+.el-form-item__content {
+    line-height: 35px !important;
+}
+
+.el-select-dropdown {
+    padding: 0 6px;
+}
+
+.Teacher_management .el-input--small .el-input__inner,
+.Student_management .el-input--small .el-input__inner,
+.Management_of_teaching_assistants .el-input--small .el-input__inner {
+    height: 40px !important;
+    line-height: 40px !important;
+}
+
+.el-select-dropdown__wrap {
+    padding-bottom: 17px;
+}

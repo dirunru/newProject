@@ -1,0 +1,63 @@
+.el-input {
+    height: 35px;
+}
+
+.diy-input-w {
+    width: 220px;
+}
+.dialog-input-w{
+    width: 460px;
+    .el-cascader,.el-date-editor.el-input,.el-date-editor.el-input, .el-date-editor.el-input__inner{
+        width: 100%;
+    }
+}
+.el-input{
+    .el-input__inner{
+        height: 100%;
+    }
+}
+//添加课节
+.addClass_box{
+    .el-select{
+        width: 100%;
+    }
+    .el-input__inner{
+        height: 35px;
+        line-height: 35px;
+    }
+}
+.right_on_border{
+    width: 50%;
+    .el-input-group__append{
+        border-top-right-radius:0;
+        border-bottom-right-radius:0;
+    }
+}
+.left_on_border{
+    width: 50%;
+    margin-left: -1px;
+    .el-input__inner{
+        border-top-left-radius:0;
+        border-bottom-left-radius:0;
+    }
+}
+
+
+// 新客场广场的title里面的input
+.square_list .square_title .el-input-group {
+    width: 500px;
+}
+.square_list .square_title .el-input__inner {
+    height: 35px;
+    border: 1px solid #EF334E;
+}
+
+.square_list .square_title .el-input-group__append {
+    border: 1px solid #EF334E;
+    background-color: #EF334E;
+    color: #ffffff;
+    cursor: pointer;
+}
+div input[type=text]:hover, input[type=password]:hover, input[type=search]:hover, input[type=number]:hover, input[type=tel]:hover, input[type=url]:hover, textarea:hover{
+    border-color: #c0c4cc ;
+}

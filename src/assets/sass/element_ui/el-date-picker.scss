@@ -1,0 +1,85 @@
+.el-date-editor--daterange {
+    height: 35px !important;
+    min-width: 235px;
+    border: 1px solid $c_ddd;
+
+    .el-range-input {
+        border: 0px !important;
+    }
+
+    .el-range-separator {
+        line-height: 30px !important;
+        color: $c_666 !important;
+    }
+}
+.el-date-editor {
+    .el-input__inner {
+        height: 35px !important;
+    }
+}
+.el-range-editor.is-active,
+.el-range-editor.is-active:hover {
+  border-color: $c_red !important;
+}
+
+// 弹窗
+.el-picker-panel__body-wrapper {
+
+    .el-picker-panel__sidebar {
+
+        .el-picker-panel__shortcut {
+
+            &:hover {
+                color: $c_red;
+            }
+        }
+    }
+
+    .el-picker-panel__body {
+
+        .el-date-range-picker__header {
+
+            .el-picker-panel__icon-btn {
+
+                &:hover {
+                    color: $c_red;
+                }
+            }
+        }
+    }
+
+    .el-date-table td.end-date span {
+        background-color: $c_red;
+    }
+
+    .el-date-table td.start-date span {
+        background-color: $c_red;
+    }
+
+}
+
+.el-select-dropdown__item.selected {
+    color: $c_red !important;
+}
+
+
+.el-time-panel__btn.confirm {
+  color: $c_red !important;
+}
+
+.el-date-table td:hover {
+  color: $c_red !important;
+}
+
+.el-date-table td.today span {
+  color: $c_red !important;
+}
+
+.el-date-table td.current:not(.disabled) span {
+  background-color: $c_red !important;
+  color: $c_fff !important;
+}
+
+.el-date-table td.current:not(.disabled) span:hover {
+  color: $c_fff !important;
+}

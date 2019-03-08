@@ -1,0 +1,38 @@
+div .el-button--default {
+    width: 100px;
+    height: 35px;
+    background: $c_fff;
+    border: 1px solid #dcdfe6;
+
+    &:hover {
+        background: $c_fff ;
+        border: 1px solid $c_red ;
+        color: $c_red ;
+    }
+
+    &:focus {
+        background: $c_fff ;
+        border: 1px solid $c_red;
+        color: $c_red;
+    }
+}
+
+
+div .el-button--primary {
+    width: 100px;
+    height: 35px;
+    color: $c_red;
+    background: $c_fff;
+    border: 1px solid $c_red;
+
+    &:hover {
+        color: $c_fff;
+        background: $c_red;
+    }
+}
+//录播课 按钮样式调整
+.recordCourseSeachBox{
+    .el-button{
+        padding: 0px;
+    }
+}

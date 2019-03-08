@@ -1,0 +1,638 @@
+@import "./bg_color.scss";
+@import "./font_size.scss";
+
+
+
+@import "./public.scss";
+@import "./sign.scss";
+@import "./table_icon.scss";
+@import "./element_ui/el-scrollbar.scss";
+@import "./element_ui/el-tabs.scss";
+@import "./element_ui/el-select.scss";
+@import "./element_ui/el-input.scss";
+@import "./element_ui/el-button.scss";
+@import "./element_ui/el-dialog.scss";
+@import "./element_ui/el-date-picker.scss";
+@import "./element_ui/el-table.scss";
+@import "./element_ui/el-pager.scss";
+@import "./element_ui/el-breadcrumb.scss";
+@import "./element_ui/el-MessageBox.scss";
+@import "./element_ui/el-radio-group.scss";
+@import "./element_ui//el-upload.scss";
+
+
+html,
+body {
+    font-size: 13px;
+    font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+    width: 100%;
+    height: 100%;
+    min-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+a,
+textarea,
+input,
+button,
+em,
+strong,
+img,
+div {
+    -webkit-touch-callout: none;
+    -moz-touch-callout: none;
+    -ms-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+textarea {
+    resize: none !important;
+}
+
+textarea:focus,
+div.el-input input:focus {
+    border: 1px solid $c_red !important;
+    box-shadow:none;
+}
+
+input {
+    color: $c_333;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px white inset;
+}
+
+li {
+    list-style: none;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+input[type=button],
+input[type=telphone],
+input[type=search],
+.app {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.pointer {
+    cursor: pointer;
+}
+.no-drop{
+    cursor: no-drop;
+}
+.RMB {
+    width: 16px;
+    height: 16px;
+    vertical-align: sub;
+}
+
+.button_one {
+    width: 60px !important;
+    font-weight: 400 !important;
+    color: #666666;
+}
+
+
+/*上传样式定义*/
+.el-upload-list {
+    width: 35%;
+    display: inline-block;
+    margin-left: 91px;
+}
+
+/* slider 部分样式 */
+
+.new_oriental_class {
+
+    .el-tree-node__children {
+        border-top: 1px solid #edeff6 !important;
+    }
+
+}
+
+
+
+/* 课程列表样式 */
+.List_of_coursesBox .List_of_coursesTime {
+    min-width: 1100px !important;
+}
+
+.List_of_coursesTime .el-dialog {
+    width: 50% !important;
+    min-width: 700px;
+    background: $c_ddd !important;
+}
+
+
+/* 授权样式 */
+
+.New_series_courseForm .el-steps .el-step__head {
+    font-size: 12px !important;
+}
+
+.New_series_courseForm .el-steps .el-step__title {
+    font-size: 14px !important;
+}
+
+.New_series_courseForm .el-form-item .el-upload {
+    width: 210px !important;
+    height: 30px;
+    background: $c_fff;
+}
+
+.New_series_courseForm .el-form-item .el-form-item__label {
+    color: $c_666;
+}
+
+.el-tabs__item {
+    color: $c_666 !important;
+}
+
+// 账号设置
+.Account_SettingsHead {
+    .el-form-item__label {
+        color: #999999;
+        line-height: 60px !important;
+    }
+
+    .el-form-item__content {
+        line-height: 60px !important;
+    }
+}
+
+.New_series_courseForm {
+
+    .el-input--small .el-input__inner {
+        height: 35px !important;
+        line-height: 35px !important;
+    }
+}
+
+.el-input__inner {
+    font-size: 13px !important;
+}
+
+.editNameInput .el-input__inner {
+    padding-right: 50px;
+}
+
+.el-tabs__nav-wrap::after {
+    height: 1px !important;
+}
+
+.el-form-item__label {
+    padding: 10px 12px 0 0 !important;
+    font-size: 13px !important;
+}
+
+.el-input--suffix input::-webkit-input-placeholder {
+    font-size: 13px;
+}
+
+/* 添加课节 */
+.ListofSeries .el-form-item .el-form-item__label {
+    font-weight: bolder;
+    color: #6d6c89;
+}
+
+.graphic_design_open_class_title .el-dialog {
+    min-width: 50% !important;
+    min-width: 470px !important;
+}
+
+.graphic_design_open_class_title .el-dialog__header {
+    border-bottom: 1px solid $c_ccc !important;
+    /*margin: 0 10px;*/
+}
+
+.graphic_design_open_class_title .el-form-item__label {
+    font-weight: bolder;
+    color: #6d6c89;
+    text-align: right;
+}
+
+.class_information .graphic_design_table .el-icon-edit {
+    font-weight: bolder;
+}
+
+/* 批量添加 */
+.cycleBox .el-checkbox__label {
+    font-size: 12px !important;
+}
+
+.New_series_courseForm .please_item .el-dialog .el-dialog__header {
+    border-bottom: 1px solid $c_ccc;
+}
+
+.el-tabs__header {
+    margin: 0 0 5px !important;
+}
+
+
+
+
+/* 新建单课程样式 */
+
+/* 课堂列表样式 */
+/* 课程分裂样式 */
+/* 课件管理样式 */
+.Courseware_managementBtn .el-dialog {
+    min-width: 400px;
+}
+
+
+/* 学生管理 */
+.allStudents .el-dialog {
+    width: 30% !important;
+}
+
+.allStudents .el-dialog__header {
+    border-bottom: 1px solid $c_999;
+}
+
+/* 操作样式 */
+
+
+.el-submenu__title {
+    height: 73px !important;
+    line-height: 73px !important;
+}
+
+// .new_oriental_class .el-submenu__title {
+//   border-bottom: 1px solid $c_eee;
+// }
+
+.el-icon-plus {
+    cursor: pointer;
+}
+
+.el-icon-edit {
+    color: #629afd;
+    cursor: pointer;
+}
+
+.el-icon-delete {
+    color: #ff8e00;
+    cursor: pointer;
+}
+
+.el-tree-node__content {
+    height: 40px !important;
+    line-height: 40px !important;
+}
+
+/* 账号设置样式 */
+.Account_SettingsHead .el-dialog {
+    min-width: 400px;
+}
+
+
+
+/* 分组管理样式 */
+
+.el-popper .el-popover--plain {
+    background-color: #dddd !important;
+}
+
+
+/*上传头像样式*/
+.avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.avatar-uploader .el-upload:hover {
+    border-color: $c_red;
+}
+
+.avatar-uploader .el-upload:focus {
+    border-color: $c_red;
+}
+
+.avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 160px;
+    height: 160px;
+    line-height: 160px !important;
+    text-align: center;
+}
+
+.avatar {
+    width: 160px;
+    height: 160px;
+    display: block;
+}
+
+.el-cascader-menu__item.is-active {
+    color: #606266 !important;
+}
+
+///* 隐藏日历(此刻)*/
+// hyh 影响其他暂时注掉 后面如遇到类似问题请单独隐藏例如：
+/*.xxx .el-button--text {
+    display: none !important;
+}*/
+/*.el-button--text {
+    display: none !important;
+}*/
+
+.el-form-item__content {
+    margin-top: 10px;
+}
+
+[class*=" el-icon-"],
+[class^=el-icon-] {
+    font-weight: 1000 !important;
+}
+
+/*弹窗按钮颜色*/
+
+.classBtn {
+    width: 100px;
+    height: 35px !important;
+    font-size: 13px !important;
+    background-color: $c_fff !important;
+    border: 1px solid $c_red !important;
+    color: $c_red !important;
+    float: right;
+}
+
+.classBtn:hover {
+    background-color: $c_red !important;
+    border: 1px solid $c_red !important;
+    color: $c_fff !important;
+    float: right;
+}
+
+/*分页聚焦颜色*/
+.el-pagination.is-background .el-pager li.active {
+    background: $c_red !important;
+}
+
+.el-pagination.is-background .el-pager li.active:hover {
+    color: $c_fff !important;
+}
+
+.el-pagination.is-background .el-pager li:hover {
+    color: $c_red !important;
+}
+
+/*载入loading样式修改*/
+.el-loading-spinner {
+    text-align: center !important;
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    margin: auto !important;
+    width: 120px !important;
+    height: 120px !important;
+    background: $c_fff !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .2) !important;
+}
+
+.el-loading-spinner i {
+    font-size: 36px !important;
+    color: $c_red !important;
+    margin-top: 16% !important;
+}
+
+.el-loading-spinner .el-loading-text {
+    font-size: 18px !important;
+    color: $c_666 !important;
+    margin-top: 10px !important;
+}
+
+.el-icon-loading {
+    -webkit-animation: rotating 1s linear infinite;
+    animation: rotating 1s linear infinite;
+}
+
+/*修改checked*/
+.el-radio__input.is-checked .el-radio__inner {
+    background: $c_red !important;
+    border: 1px solid $c_red !important;
+}
+
+.el-radio__input.is-checked+.el-radio__label {
+    color: $c_red !important;
+}
+
+/*面包屑*/
+.el-breadcrumb__inner:hover,
+.el-breadcrumb__inner a:hover {
+    color: $c_red !important;
+}
+
+/*设置table最小高度*/
+
+
+/*左右滑动*/
+.el-tabs__active-bar {
+    background: $c_red !important;
+}
+
+/*日历*/
+
+/*关闭按钮*/
+.el-dialog__headerbtn .el-dialog__close:hover {
+    color: $c_red !important;
+}
+
+.el-message-box__headerbtn .el-message-box__close:hover {
+    color: $c_red !important;
+}
+
+/*radio*/
+.el-radio__inner:hover {
+    border: 1px solid $c_red !important;
+}
+
+/*checkBox*/
+.el-checkbox__inner:hover {
+    border: 1px solid $c_red !important;
+}
+
+.el-checkbox__input.is-checked+.el-checkbox__label {
+    color: $c_red !important;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background: $c_red !important;
+    border: 1px solid $c_red !important;
+}
+
+.el-checkbox__input.is-focus .el-checkbox__inner {
+    border: 1px solid #dcdfe6 !important;
+}
+
+/*海报太大上下滚动*/
+.el-message-box__wrapper {
+    overflow: auto !important;
+}
+
+/*悬浮窗*/
+.el-popover {
+    min-width: 80px !important;
+}
+
+/*选项卡-课程封面*/
+
+.el-card__body {
+  padding: 10px !important;
+}
+
+
+/*wangEditor*/
+.w-e-toolbar {
+    flex-wrap: wrap !important;
+}
+
+.el-button {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.btn-prev,
+.btn-next {
+
+    i {
+        &:hover {
+            color: #EF334E;
+        }
+    }
+
+}
+
+
+.Teacher_management,
+.Student_management,
+.Management_of_teaching_assistants {
+
+    .el-tree-node__content {
+        &:hover {
+            background-color: #f5f5f9;
+        }
+
+        span {
+            font-size: 13px !important;
+        }
+    }
+
+}
+.addTeacher{
+    textarea.textarea{
+        border: 1px solid #dcdfe6;
+        width: 100%;
+        padding: 5px 0;
+        text-indent: 15px;
+        height: 60px;
+        z-index: 3;
+        color: #666;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+}
+.el-form-item__content{
+    position: relative;
+    .counter_num{
+        font-size: 12px;
+        color: #c0c4cb;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        z-index: 102;
+    }
+}
+.remind {
+    width: 100%;
+    font-size: 12px;
+    color: #a1a1a1;
+    letter-spacing: 1px;
+}
+.icon_add{
+    vertical-align: sub;
+    display: inline-block;
+}
+.el-tag {
+    background: #fff;
+    margin-right: 10px;
+    padding: 0 10px;
+    height: 32px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #c0c4cc;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #c0c4cc;
+    white-space: nowrap;
+    .el-tag__close.el-icon-close{
+        color: #999;
+    }
+    i.el-icon-close:hover{
+        background-color: #cccccc;
+    }
+}
+.addTeacher{
+    .el-upload-list.el-upload-list--text{
+        width: 100%;
+        margin-left: 0px;
+        display: block;
+    }
+    .upLoad_content{
+        //line-height: ;
+    }
+    .upLoad{
+        li.el-upload-list__item{
+            transition: none;
+        }
+    }
+}

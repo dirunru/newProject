@@ -1,0 +1,11 @@
+.student-form {
+    .el-upload-list {
+        margin-left: 0 !important;
+    }
+
+    .el-upload-list__item.is-success .el-upload-list__item-name {
+        &:hover {
+            color: $c_red;
+        }
+    }
+}

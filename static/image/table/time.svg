@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>时间</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="教务管理-课堂监控" transform="translate(-273.000000, -409.000000)">
+            <g id="课程1" transform="translate(259.000000, 186.000000)">
+                <g id="时间_export" transform="translate(14.000000, 223.000000)">
+                    <g id="时间" transform="translate(1.000000, 1.000000)">
+                        <circle id="Oval-2" stroke="#999999" cx="6" cy="6" r="5.5"></circle>
+                        <path d="M7,6.44514498 C7.00094006,6.46419515 7.00093237,6.48322831 6.99999537,6.5021749 C6.99952229,6.61326221 6.96282262,6.7157982 6.90109961,6.79857959 C6.86130627,6.85735685 6.81010833,6.90959705 6.7484491,6.95173616 L3.85117693,8.93178803 C3.65420885,9.06639982 3.38541026,9.01585007 3.25079846,8.81888199 C3.23895369,8.80155037 3.22838807,8.78337837 3.21918557,8.76451046 C3.09329911,8.50640495 3.17571599,8.19502573 3.41280578,8.03299398 L6,6.26485539 L6,2.5 C6,2.22385763 6.22385763,2 6.5,2 C6.77614237,2 7,2.22385763 7,2.5 L7,6.44514498 Z" id="Combined-Shape" fill="#999999"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

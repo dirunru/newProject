@@ -1,0 +1,131 @@
+/* 横排显示 */
+.text_center{text-align:center;}
+.text_left{text-align:left;}
+.text_right{text-align:right;}
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.flex_justify_center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex_align_center {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.flex_space_between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.amals {
+    margin: 20px;
+}
+
+.maya {
+    background: $c_fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+    padding: 15px 20px 20px 20px;
+}
+.flex{
+    flex: 1;
+    margin: 10px;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float: right;
+}
+.df{
+    display: flex;
+}
+.mT05 {
+    margin-top: 5px;
+}
+.mT10{
+    margin-top: 10px;
+}
+.mT20{
+    margin-top: 20px;
+}
+.mB10{
+    margin-bottom: 10px;
+}
+.mB20{
+    margin-bottom: 20px;
+}
+.ml10{
+    margin-left: 10px;
+}
+.mL20{
+    margin-left: 20px;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.display_inl{
+    display: inline-block;
+}
+.disflex{
+    display: flex;
+}
+.width70{
+    width: 70%;
+}
+.width100{
+    width: 100%;
+}
+.border_b{
+    border-bottom: 1px solid #cccccc;
+}
+.h35_l35{
+    height: 35px;
+    line-height: 35px;
+    .el-input__inner{
+        height: 35px;
+        line-height: 35px;
+    }
+}
+.mini_user_img{
+    width: 40px;
+    height: 40px;
+    img{
+        width: 100%;
+        display: inline-block;
+    }
+}
+//右侧 内容容器
+.temp_content{
+    padding: 15px 20px 20px;
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.04);
+    border-radius: 2px;
+    margin: 20px;
+}
+.addAccount{
+    .el-form-item{
+        margin-bottom: 0px;
+    }
+    .el-cascader,.el-select{
+        width: 100%;
+    }
+}

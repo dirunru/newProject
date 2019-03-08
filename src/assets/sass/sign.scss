@@ -1,0 +1,197 @@
+.login {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    background: $c_fff;
+
+    // input 去除点击框
+    input:focus {
+        border: 0px !important;
+        box-shadow: none;
+    }
+}
+
+.land_module {
+    text-align: center;
+    width: 330px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    transform: translateY(-50%);
+    margin: auto;
+}
+
+.land_logo {
+    width: 168px;
+    height: 52px;
+    margin: auto;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.title_top {
+    margin: 39px 0 30px 0;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+
+    span {
+        display: inline-block;
+        margin: 0 5% 0;
+        cursor: pointer;
+        height: 35px;
+        line-height: 35px;
+    }
+}
+
+.title_span_border {
+    border-bottom: 2px solid $c_f84;
+}
+
+.login_dl {
+    background: $c_fff;
+    border: 1px solid $c_ddd;
+    border-radius: 2px;
+    width: 320px;
+    height: 40px;
+    line-height: 40px;
+    margin: auto;
+    overflow: hidden;
+
+    span {
+        display: inline-block;
+        width: 35px;
+        height: 40px;
+        line-height: 40px;
+        font-family: PingFangSC-Regular;
+        letter-spacing: 2px;
+        text-align: center;
+        float: left;
+
+        img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+    }
+
+    input {
+        outline: none;
+        width: 270px;
+        height: 40px;
+        line-height: 38px;
+        float: left;
+        border: 0px;
+        text-indent: 4px;
+        background: $c_fff;
+    }
+}
+
+.pwd {
+    margin-top: 16px;
+}
+
+.title_err {
+    background: $c_f8f;
+    border: 1px solid $c_fc3;
+    border-radius: 2px;
+    width: 320px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px auto 16px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: $c_fc3;
+    text-align: left;
+
+    img {
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+}
+
+.signIn {
+    margin-top: 40px;
+    border-radius: 2px;
+    border: 0px;
+    width: 320px;
+    height: 40px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: $c_fff;
+    letter-spacing: 2px;
+    background: $c_red;
+    outline: none;
+    cursor: pointer;
+}
+
+.border {
+    border: 1px solid $c_red;
+}
+
+// .log_left {}
+
+.log_right {
+    overflow: auto;
+
+    .Verification {
+        float: left;
+        width: 180px;
+        margin-left: 4px;
+
+        input {
+            width: 130px;
+        }
+    }
+}
+
+.getCode {
+    width: 130px;
+    float: right;
+    background: $c_red;
+    color: $c_fff;
+    border: 1px solid $c_red;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+.reset_group {
+    margin-top: 30px;
+
+    p {
+        color: $c_999;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .register {
+        margin-top: 10px;
+
+        a {
+            color: $c_red;
+        }
+    }
+
+    .Forget_pwd {
+        a {
+            color: $c_999;
+        }
+    }
+}
+
+
+
+
+.get_Yzm {
+    width: 100%;
+    border: 0px;
+    height: 42px;
+}

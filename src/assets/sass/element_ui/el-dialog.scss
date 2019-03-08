@@ -1,0 +1,114 @@
+.el-dialog {
+
+    .el-dialog__header {
+        background: $c_F5F5;
+        height: 45px;
+        line-height: 45px;
+        padding: 0 !important;
+        border-radius: 2px ;
+
+        .el-dialog__title {
+            font-size: 14px;
+            color: $c_666;
+        }
+
+        span {
+            margin-left: 20px;
+        }
+    }
+
+    div.el-dialog__body {
+        padding: 0px 20px 20px;
+
+        .el-upload__tip {
+            margin-bottom: 20px;
+        }
+
+        .avatar-uploader .el-upload:hover {
+            border: 1px dashed $c_red;
+        }
+    }
+
+    .el-dialog__headerbtn {
+        top: 14px;
+    }
+
+    .el-tabs__header {
+            margin: 0 0 20px !important;
+    }
+
+    .el-table td {
+        padding: 10px 0 !important;
+    }
+}
+div.dialog_share{
+    color: red;
+    div.el-dialog__body {
+        padding: 30px 20px;
+        .el-upload__tip {
+            margin-bottom: 20px;
+        }
+        .avatar-uploader .el-upload:hover {
+            border: 1px dashed $c_red;
+        }
+    }
+}
+
+.Class_list .el-dialog__body,
+.Group_management .el-dialog__body,
+.List_of_courses .el-dialog__body,
+.Order_record .el-dialog__body,
+.New_single_course .el-dialog__body,
+.New_series_courseForm .el-dialog__body {
+  margin-top: 20px !important;
+}
+
+
+.Curriculum_classification .el-dialog__body,
+.Student_management .el-dialog__body,
+.Teacher_management .el-dialog__body,
+.Management_of_teaching_assistants .el-dialog__body,
+.Authentication_information .el-dialog__body {
+  margin-top: 10px !important;
+}
+
+.Class_list .edit_single_class  {
+
+    .el-dialog__body {
+        margin-top: 5px !important;
+    }
+
+    .el-tabs__header {
+        margin: 0 !important;
+    }
+
+    .el-tabs__nav {
+        margin-left: 25px;
+    }
+
+}
+
+.ListofSeries .series_class_section {
+
+    .el-dialog__body {
+        margin-top: 5px !important;
+    }
+
+    .el-tabs__header {
+        margin: 0 !important;
+    }
+
+    .el-tabs__nav {
+        margin-left: 25px;
+    }
+}
+
+.Authentication_information,
+.Account_Settings .editNameInput {
+    .el-form-item__label {
+        width: 65px !important;
+    }
+    .el-form-item__content {
+        margin-left: 65px !important;
+    }
+}

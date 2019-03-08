@@ -1,0 +1,81 @@
+// element-ui的侧边栏样式重写
+.el-scrollbar {
+    .el-scrollbar__wrap {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .el-scrollbar__bar {
+        margin-right: -20px;
+        overflow: -moz-scrollbars-none;
+    }
+
+    .el-col-12 {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .el-menu-item {
+        font-size: 12px;
+        min-width: 200px !important;
+        padding-left: 55px !important;
+        height: 40px !important;
+        line-height: 40px;
+
+        &:hover {
+            background:#F1F3F7 !important;
+            color: $c_red !important;
+        }
+
+        span {
+            font-size: 13px;
+            color: #888888;
+        }
+
+        
+    }
+
+    .is-active {
+        background-color: #F1F3F7 !important;
+        color: $c_red !important;
+    }   
+
+    .el-menu-item.is-active {
+        .img_line {
+            display: inline-block;
+        }
+    }
+
+    .el-submenu__title {
+        width: 200px !important;
+        height: 40px !important;
+        line-height: 40px !important;
+
+        i {
+            color: #888888 !important;
+        }
+
+        &:hover {
+            background:#F1F3F7 !important;
+            
+        }
+
+        span {
+            font-size: 13px;
+            color: $c_666;
+        }
+    }
+
+    .el-menu-item-group__title {
+        padding: 0 !important;
+    }
+
+}
+
+.el-submenu__icon-arrow {
+    font-size: 15px !important;
+}
+
+// .square_list .el-scrollbar .el-scrollbar__wrap {
+//     overflow-x: scroll;
+// }

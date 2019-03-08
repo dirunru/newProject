@@ -1,0 +1,21 @@
+.el-message-box .el-message-box__header {
+  background-color: $c_F5F5 !important;
+}
+
+.el-message-box--center .el-message-box__header {
+    padding: 15px 15px 10px !important;
+}
+
+.el-message-box--center .el-message-box__title {
+    -webkit-box-pack: start !important;
+    justify-content: flex-start !important;
+
+    span {
+        font-size: 15px;
+        color: #666666;
+    }
+}
+
+.el-message-box__message {
+  margin: 12px 0 6px 0 !important;
+}

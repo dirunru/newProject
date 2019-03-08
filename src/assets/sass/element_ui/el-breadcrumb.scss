@@ -1,0 +1,22 @@
+
+ .el-breadcrumb__inner a,
+ .el-breadcrumb__inner.is-link {
+   font-weight: 400 !important;
+ }
+
+
+ .el-breadcrumb {
+     span {
+         &:nth-child(1) {
+             .el-breadcrumb__inner.is-link {
+                 color: #999999;
+             }
+         }
+
+         &::nth-child(2) {
+             .el-breadcrumb__inner.is-link {
+               color: #666666;
+             }
+         }
+     }
+ }

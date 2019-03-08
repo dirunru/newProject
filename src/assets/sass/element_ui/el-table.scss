@@ -1,0 +1,102 @@
+.el-table {
+    width: 100%;
+    .cell.el-tooltip {
+        white-space: pre-wrap !important;
+    }
+
+    div.cell{
+        line-height: 23px;
+        white-space: nowrap
+
+    }
+    .el-table__header-wrapper {
+      tr > th {
+        text-align: center;
+      }
+    }
+}
+
+
+
+.el-table thead th:nth-child(1) div {
+    padding-left: 20px;
+}
+
+.el-table__empty-block {
+    width: 100%;
+}
+
+.el-table__body,
+.el-table__footer,
+.el-table__header {
+  table-layout: auto;
+  border-collapse: separate;
+}
+
+.el-table thead {
+    width: 100% !important;
+}
+
+.el-table thead th,
+.el-table thead tr {
+    background: #f5f5f9 !important;
+}
+
+table {
+    width: 100%;
+}
+
+
+.el-table--enable-row-hover .el-table__body tr:hover>td {
+  background-color: #f9f9fb !important;
+}
+
+.el-table__body tr {
+    min-height: 50px;
+}
+
+.el-table td {
+    padding: 5px 0 !important;
+}
+
+
+.el-table th,
+.el-table tr {
+    font-size: 13px;
+}
+
+.el-table th>.cell {
+  font-weight: 400 !important;
+}
+
+
+/* 所有table不要纯黑 */
+.el-table td,
+.el-table th.is-leaf {
+  color: $c_666;
+}
+
+.Teacher_management table tbody tr td div,
+.Student_management table tbody tr td div,
+.Management_of_teaching_assistants table tbody tr td div {
+    line-height: 30px !important;
+}
+div.teacherListBox{
+    .el-table__body, .el-table__footer, .el-table__header{
+        table-layout:fixed;;
+    }
+}
+
+.teacherCheck {
+  .el-table__body tr.current-row>td {
+    background-color: #EF334E !important;
+    color: #fff;
+  }
+  .el-table--enable-row-hover .el-table__body tr:hover>td {
+    background-color: #EF334E !important;
+    color: #fff;
+  }
+}
+.h_tip{
+    width: 340px;
+}
