@@ -37,6 +37,12 @@ export default new Router({
         path: 'getMap',
         name: 'getMap',
         component: resolve => require(['@/components/getMap/getMap.vue'], resolve),
+      },
+      // vue项目的dialog和table集合
+      {
+        path: 'vueTable',
+        name: 'vueTable',
+        component: resolve => require(['@/components/vueTable/vueTable.vue'], resolve),
       }
     ]
   }]

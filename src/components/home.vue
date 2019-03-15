@@ -24,7 +24,7 @@
               </template>
               <el-menu-item-group>
                 <el-menu-item index="/getMap">获取经纬度</el-menu-item>
-                <el-menu-item index="">待定</el-menu-item>
+                <el-menu-item index="/vueTable">vueTabel集合封装</el-menu-item>
                 <el-menu-item index="">待定</el-menu-item>
                 <el-menu-item index="">待定</el-menu-item>
               </el-menu-item-group>

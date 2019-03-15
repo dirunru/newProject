@@ -1,57 +1,61 @@
 .el-dialog {
 
-    .el-dialog__header {
-        background: $c_F5F5;
-        height: 45px;
-        line-height: 45px;
-        padding: 0 !important;
-        border-radius: 2px ;
+  .el-dialog__header {
+    background: $c_F5F5;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 !important;
+    border-radius: 2px;
 
-        .el-dialog__title {
-            font-size: 14px;
-            color: $c_666;
-        }
-
-        span {
-            margin-left: 20px;
-        }
+    .el-dialog__title {
+      font-size: 14px;
+      color: $c_666;
     }
 
-    div.el-dialog__body {
-        padding: 0px 20px 20px;
+    span {
+      margin-left: 20px;
+    }
+  }
 
-        .el-upload__tip {
-            margin-bottom: 20px;
-        }
+  div.el-dialog__body {
+    padding: 0px 20px 20px;
 
-        .avatar-uploader .el-upload:hover {
-            border: 1px dashed $c_red;
-        }
+    .el-upload__tip {
+      margin-bottom: 20px;
     }
 
-    .el-dialog__headerbtn {
-        top: 14px;
+    .avatar-uploader .el-upload:hover {
+      border: 1px dashed $c_red;
     }
+  }
 
-    .el-tabs__header {
-            margin: 0 0 20px !important;
-    }
+  .el-dialog__headerbtn {
+    top: 0;
+  }
 
-    .el-table td {
-        padding: 10px 0 !important;
-    }
+  .el-tabs__header {
+    margin: 0 0 20px !important;
+  }
+
+  .el-table td {
+    padding: 10px 0 !important;
+  }
 }
-div.dialog_share{
-    color: red;
-    div.el-dialog__body {
-        padding: 30px 20px;
-        .el-upload__tip {
-            margin-bottom: 20px;
-        }
-        .avatar-uploader .el-upload:hover {
-            border: 1px dashed $c_red;
-        }
+
+div.dialog_share {
+  color: red;
+
+  div.el-dialog__body {
+    padding: 30px 20px;
+
+    .el-upload__tip {
+      margin-bottom: 20px;
     }
+
+    .avatar-uploader .el-upload:hover {
+      border: 1px dashed $c_red;
+    }
+  }
 }
 
 .Class_list .el-dialog__body,
@@ -72,43 +76,44 @@ div.dialog_share{
   margin-top: 10px !important;
 }
 
-.Class_list .edit_single_class  {
+.Class_list .edit_single_class {
 
-    .el-dialog__body {
-        margin-top: 5px !important;
-    }
+  .el-dialog__body {
+    margin-top: 5px !important;
+  }
 
-    .el-tabs__header {
-        margin: 0 !important;
-    }
+  .el-tabs__header {
+    margin: 0 !important;
+  }
 
-    .el-tabs__nav {
-        margin-left: 25px;
-    }
+  .el-tabs__nav {
+    margin-left: 25px;
+  }
 
 }
 
 .ListofSeries .series_class_section {
 
-    .el-dialog__body {
-        margin-top: 5px !important;
-    }
+  .el-dialog__body {
+    margin-top: 5px !important;
+  }
 
-    .el-tabs__header {
-        margin: 0 !important;
-    }
+  .el-tabs__header {
+    margin: 0 !important;
+  }
 
-    .el-tabs__nav {
-        margin-left: 25px;
-    }
+  .el-tabs__nav {
+    margin-left: 25px;
+  }
 }
 
 .Authentication_information,
 .Account_Settings .editNameInput {
-    .el-form-item__label {
-        width: 65px !important;
-    }
-    .el-form-item__content {
-        margin-left: 65px !important;
-    }
+  .el-form-item__label {
+    width: 65px !important;
+  }
+
+  .el-form-item__content {
+    margin-left: 65px !important;
+  }
 }
