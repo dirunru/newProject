@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="homePage">
     <el-container>
       <el-header>{{LocationCity}}</el-header>
       <el-container>
@@ -88,15 +88,15 @@
   }
 
 </script>
-<style scoped>
-  .el-header {
+<style>
+  .homePage .el-header {
     background-color: #B3C0D1;
     color: #333;
     text-align: center;
     line-height: 60px;
   }
 
-  .el-aside {
+  .homePage .el-aside {
     background-color: #D3DCE6;
     color: #333;
     text-align: center;
@@ -104,7 +104,7 @@
     height: 100vh;
   }
 
-  .el-main {
+  .homePage .el-main {
     background-color: #E9EEF3;
     color: #333;
     text-align: center;

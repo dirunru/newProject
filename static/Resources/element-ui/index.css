@@ -741,12 +741,14 @@
 }
 
 .el-dialog__body {
-  /* padding: 30px 20px; */
+  padding: 30px 20px;
   color: #606266;
   font-size: 14px
 }
 
 .el-dialog__footer {
+  padding: 10px 20px 20px;
+  text-align: right;
   box-sizing: border-box
 }
 
@@ -756,7 +758,7 @@
 
 .el-dialog--center .el-dialog__body {
   text-align: initial;
-  /* padding: 25px 25px 30px */
+  padding: 25px 25px 30px
 }
 
 .el-dialog--center .el-dialog__footer {
