@@ -43,6 +43,12 @@ export default new Router({
         path: 'vueTable',
         name: 'vueTable',
         component: resolve => require(['@/components/vueTable/vueTable.vue'], resolve),
+      },
+      // vue项目中的日历组件
+      {
+        path: 'eleCalendar',
+        name: 'eleCalendar',
+        component: resolve => require(['@/components/eleCalendar/eleCalendar.vue'], resolve),
       }
     ]
   }]

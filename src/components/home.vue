@@ -1,7 +1,7 @@
 <template>
-  <div class="homePage">
+  <div>
     <el-container>
-      <el-header>{{LocationCity}}</el-header>
+      <el-header class="homeHead">{{LocationCity}}</el-header>
       <el-container>
         <el-aside width="200px">
           <el-menu class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" router>
@@ -25,7 +25,7 @@
               <el-menu-item-group>
                 <el-menu-item index="/getMap">获取经纬度</el-menu-item>
                 <el-menu-item index="/vueTable">vueTabel集合封装</el-menu-item>
-                <el-menu-item index="">待定</el-menu-item>
+                <el-menu-item index="/eleCalendar">eleCalendar日历组件</el-menu-item>
                 <el-menu-item index="">待定</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
@@ -74,8 +74,8 @@
         geolocation.getCurrentPosition(function getinfo(position) {
           console.log(position);
           let province = position.address.province; //获取省份信息
-          let city = position.address.city|| ''; //获取城市信息
-          let area = position.address.district || '';//区
+          let city = position.address.city || ''; //获取城市信息
+          let area = position.address.district || ''; //区
           let street = (position.address.street || '') + (position.address.streetNumber || '') // 街道
           _this.LocationCity = province + city + area + street + '街道';
         }, function (e) {
@@ -88,27 +88,9 @@
   }
 
 </script>
-<style>
-  .homePage .el-header {
-    background-color: #B3C0D1;
-    color: #333;
-    text-align: center;
+<style scoped>
+  .homeHead{
+    background:#B3C0D1;
     line-height: 60px;
   }
-
-  .homePage .el-aside {
-    background-color: #D3DCE6;
-    color: #333;
-    text-align: center;
-    line-height: 200px;
-    height: 100vh;
-  }
-
-  .homePage .el-main {
-    background-color: #E9EEF3;
-    color: #333;
-    text-align: center;
-    line-height: 160px;
-  }
-
 </style>
