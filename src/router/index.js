@@ -49,6 +49,12 @@ export default new Router({
         path: 'eleCalendar',
         name: 'eleCalendar',
         component: resolve => require(['@/components/eleCalendar/eleCalendar.vue'], resolve),
+      },
+      // 动态添加
+      {
+        path: 'activeAdd',
+        name: 'activeAdd',
+        component: resolve => require(['@/components/activeAdd/activeAdd.vue'], resolve),
       }
     ]
   }]
