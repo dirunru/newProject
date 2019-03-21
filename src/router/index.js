@@ -61,7 +61,13 @@ export default new Router({
         path: 'activeAdd',
         name: 'activeAdd',
         component: resolve => require(['@/components/activeAdd/activeAdd.vue'], resolve),
-      }
+      },
+      // vue tabs切换，组件封装 tabSwitch
+      {
+        path: 'tabSwitch',
+        name: 'tabSwitch',
+        component: resolve => require(['@/components/tabSwitch/tabSwitch.vue'], resolve),
+      },
     ]
   }]
 })

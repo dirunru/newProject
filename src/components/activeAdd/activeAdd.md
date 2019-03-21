@@ -8,7 +8,13 @@ for (let k in row) {
 
        let obj = {}
       this.editEntryArr.filter((i, idx) => {
-        obj[`mountingExtends${(this.haveEntryNum != 0 ? (this.haveEntryNum) + idx + 1 : '')}`] = i
+        <!-- 如果之前没有 -->
+        if (this.haveEntryNum == 0) {
+          obj[`mountingExtends${(idx!= 0 ? idx + 1 : '')}`] = i
+          <!-- 如果之前有 -->
+        }else{
+          obj[`mountingExtends${(this.haveEntryNum + idx + 1)}`] = i
+        }
       })
       let objNew = {}
       this.editAccessoriesInfo.mountingExtends.filter((i, id) => {
