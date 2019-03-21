@@ -56,6 +56,12 @@ export default new Router({
         name: 'eleForm',
         component: resolve => require(['@/components/eleForm/eleForm.vue'], resolve),
       },
+      // 动态添加
+      {
+        path: 'activeAdd',
+        name: 'activeAdd',
+        component: resolve => require(['@/components/activeAdd/activeAdd.vue'], resolve),
+      }
     ]
   }]
 })

@@ -26,7 +26,7 @@
                 <el-menu-item index="/getMap">获取经纬度</el-menu-item>
                 <el-menu-item index="/vueTable">vueTabel集合封装</el-menu-item>
                 <el-menu-item index="/eleCalendar">eleCalendar日历组件</el-menu-item>
-                <el-menu-item index="">待定</el-menu-item>
+                <el-menu-item index="/activeAdd">动态添加输入框</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
             <el-menu-item index="3">
