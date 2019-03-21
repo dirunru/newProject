@@ -2,34 +2,47 @@ import tabContent from "../../common/tabContent/tabContent.vue"
 export default {
   data() {
     return {
-      activeName: 'second',
+      activeName: 'first',
+      tabs: [{
+        label: '全部',
+        name: 'first'
+      }, {
+        label: '未生效',
+        name: 'second'
+      }, {
+        label: '生效中',
+        name: 'third'
+      }, {
+        label: '已结束',
+        name: 'fourth'
+      }],
       firstTableData: 'firstTableData',
       secondTableData: 'secondTableData',
       thirdTableData: 'thirdTableData',
-      fourTableData: 'fourTableData',
+      fourthTableData: 'fourthTableData',
       title: 'secondTableData'
     };
   },
-  mounted () {
-     
+  mounted() {
+
   },
   methods: {
     handleClick(tab) {
       switch (tab.label) {
-        case '用户':
+        case '全部':
           this.title = this.firstTableData
           break;
-        case '配置':
+        case '未生效':
           this.title = this.secondTableData;
           break;
-        case '角色':
+        case '生效中':
           this.title = this.thirdTableData;
           break;
-        case '定时任务补偿':
-          this.title = this.fourTableData;
+        case '已结束':
+          this.title = this.fourthTableData;
           break;
         default:
-          this.title = this.secondTableData;
+          this.title = this.firstTableData;
       }
     }
   },

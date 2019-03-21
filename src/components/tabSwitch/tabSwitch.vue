@@ -1,19 +1,10 @@
 <template>
   <div>
     <el-tabs v-model="activeName" @tab-click="handleClick">
-      <el-tab-pane label="用户" name="first" >
-          <tab-content :data = "title"></tab-content>
-      </el-tab-pane>
-      <el-tab-pane label="配置" name="second">
-          <tab-content :data = "title"></tab-content>
-      </el-tab-pane>
-      <el-tab-pane label="角色" name="third">
-          <tab-content :data = "title"></tab-content>
-      </el-tab-pane>
-      <el-tab-pane label="定时任务补偿" name="fourth">
-          <tab-content :data = "title"></tab-content>
+      <el-tab-pane v-for="(item,index) in tabs" :key="index" :label="item.label" :lazy="false" :name="item.name">
       </el-tab-pane>
     </el-tabs>
+    <tab-content :data="title"></tab-content>
   </div>
 </template>
 
