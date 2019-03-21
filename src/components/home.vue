@@ -3,45 +3,65 @@
     <el-container>
       <el-header class="homeHead">{{LocationCity}}</el-header>
       <el-container>
-        <el-aside width="200px">
-          <el-menu class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" router>
-            <el-submenu index="1">
-              <template slot="title">
-                <i class="el-icon-location"></i>
-                <span>导航一</span>
-              </template>
-              <el-menu-item-group>
-                <el-menu-item index="/HelloWorld">bootstrap</el-menu-item>
-                <el-menu-item index="/practice_one">JSON字符串获取值</el-menu-item>
-                <el-menu-item index="/fullCreeen">全屏和退出全屏</el-menu-item>
-                <el-menu-item index="/vueMap">vue项目使用地图</el-menu-item>
-              </el-menu-item-group>
-            </el-submenu>
-            <el-submenu index="2">
-              <template slot="title">
-                <i class="el-icon-menu"></i>
-                <span>导航二</span>
-              </template>
-              <el-menu-item-group>
-                <el-menu-item index="/getMap">获取经纬度</el-menu-item>
-                <el-menu-item index="/vueTable">vueTabel集合封装</el-menu-item>
-                <el-menu-item index="/eleCalendar">eleCalendar日历组件</el-menu-item>
-                <el-menu-item index="/activeAdd">动态添加输入框</el-menu-item>
-                <el-menu-item index="/eleForm">动态添加placeholder</el-menu-item>
-                <el-menu-item index="/tabSwitch">vue tabs切换组件封装</el-menu-item>
-              </el-menu-item-group>
-            </el-submenu>
-            <el-menu-item index="3">
-              <i class="el-icon-document"></i>
-              <span slot="title">导航三</span>
-            </el-menu-item>
-            <el-menu-item index="4">
-              <i class="el-icon-setting"></i>
-              <span slot="title">导航四</span>
-            </el-menu-item>
-          </el-menu>
-        </el-aside>
-        <el-main>
+        <el-scrollbar class="slider">
+          <el-aside>
+            <el-menu class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" router>
+              <el-submenu index="1">
+                <template slot="title">
+                  <i class="el-icon-location"></i>
+                  <span>导航一</span>
+                </template>
+                <el-menu-item-group>
+                  <el-menu-item index="/HelloWorld">bootstrap</el-menu-item>
+                  <el-menu-item index="/practice_one">JSON字符串获取值</el-menu-item>
+                  <el-menu-item index="/fullCreeen">全屏和退出全屏</el-menu-item>
+                  <el-menu-item index="/vueMap">vue项目使用地图</el-menu-item>
+                  <el-menu-item index="/getMap">获取经纬度</el-menu-item>
+                </el-menu-item-group>
+              </el-submenu>
+              <el-submenu index="2">
+                <template slot="title">
+                  <i class="el-icon-menu"></i>
+                  <span>导航二</span>
+                </template>
+                <el-menu-item-group>
+                  <el-menu-item index="/vueTable">vueTabel集合封装</el-menu-item>
+                  <el-menu-item index="/eleCalendar">eleCalendar日历组件</el-menu-item>
+                  <el-menu-item index="/activeAdd">动态添加输入框</el-menu-item>
+                  <el-menu-item index="/eleForm">动态添加placeholder</el-menu-item>
+                  <el-menu-item index="/tabSwitch">vue tabs切换组件封装</el-menu-item>
+                </el-menu-item-group>
+              </el-submenu>
+              <el-submenu index="3">
+                <template slot="title">
+                  <i class="el-icon-document"></i>
+                  <span slot="title">导航三</span>
+                </template>
+                <el-menu-item-group>
+                  <el-menu-item index="">待定</el-menu-item>
+                  <el-menu-item index="">待定</el-menu-item>
+                  <el-menu-item index="">待定</el-menu-item>
+                  <el-menu-item index="">待定</el-menu-item>
+                  <el-menu-item index="">待定</el-menu-item>
+                </el-menu-item-group>
+              </el-submenu>
+              <el-submenu index="4">
+                <template slot="title">
+                  <i class="el-icon-setting"></i>
+                  <span slot="title">导航四</span>
+                </template>
+                <el-menu-item-group>
+                  <el-menu-item index="">待定</el-menu-item>
+                  <el-menu-item index="">待定</el-menu-item>
+                  <el-menu-item index="">待定</el-menu-item>
+                  <el-menu-item index="">待定</el-menu-item>
+                  <el-menu-item index="">待定</el-menu-item>
+                </el-menu-item-group>
+              </el-submenu>
+            </el-menu>
+          </el-aside>
+        </el-scrollbar>
+        <el-main class="homeMain">
           <router-view />
         </el-main>
       </el-container>
@@ -91,8 +111,89 @@
 
 </script>
 <style scoped>
-  .homeHead{
-    background:#B3C0D1;
+  .homeHead {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #B3C0D1;
     line-height: 60px;
   }
+
+  .homeMain {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    left: 200px;
+  }
+
+  .slider {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    width: 200px;
+    height: 100%;
+    min-height: 600px;
+    margin-bottom: 50px;
+    /* border-top: 1px solid #273140; */
+    border-bottom: 1px solid #3e495a;
+    /* overflow-y: auto; */
+    overflow: hidden;
+    z-index: 3;
+    padding-bottom: 60px;
+  }
+
+  .slider::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 0px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 4px;
+  }
+
+  .slider::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #fff;
+    -webkit-box-shadow: inset 0 0 5px #fff;
+    -moz-box-shadow: inset 0 0 5px #fff;
+    background: #fff;
+  }
+
+  .slider::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px #fff;
+    -webkit-box-shadow: inset 0 0 5px #fff;
+    -moz-box-shadow: inset 0 0 5px #fff;
+    border-radius: 0;
+    background: #fff;
+  }
+
+  .slider::scrollbar {
+    /*滚动条整体样式*/
+    width: 0px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 4px;
+  }
+
+  .slider::scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #fff;
+    -webkit-box-shadow: inset 0 0 5px #fff;
+    -moz-box-shadow: inset 0 0 5px #fff;
+    background: #fff;
+  }
+
+  .slider::scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px #fff;
+    -webkit-box-shadow: inset 0 0 5px #fff;
+    -moz-box-shadow: inset 0 0 5px #fff;
+    border-radius: 0;
+    background: #fff;
+  }
+
 </style>
