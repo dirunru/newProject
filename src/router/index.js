@@ -49,7 +49,13 @@ export default new Router({
         path: 'eleCalendar',
         name: 'eleCalendar',
         component: resolve => require(['@/components/eleCalendar/eleCalendar.vue'], resolve),
-      }
+      },
+      // vue 项目的form表单eleForm
+      {
+        path: 'eleForm',
+        name: 'eleForm',
+        component: resolve => require(['@/components/eleForm/eleForm.vue'], resolve),
+      },
     ]
   }]
 })
