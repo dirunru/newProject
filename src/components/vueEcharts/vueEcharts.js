@@ -57,6 +57,10 @@ export default {
           text: '全年设备产量对比图',
           left: 'center'
         },
+        tooltip: {
+          trigger: 'item',
+          formatter: '{a} <br/>{b} : {c}'
+        },
         xAxis: {
           type: 'category',
           data: ['检品机1', '检品机2', '检品机3', '检品机4', '检品机5', '检品机6', '检品机7']
@@ -89,10 +93,14 @@ export default {
           }
         ]
       },
-      option3:{
+      option3: {
         title: {
-            text: '饼状图',
-            left: 'center'
+          text: '饼状图',
+          left: 'center'
+        },
+        tooltip: {
+          trigger: 'item',
+          formatter: '{a} <br/>{b} : {c}'
         },
         series: [{
           name: '访问来源',
@@ -121,12 +129,17 @@ export default {
           ]
         }]
       },
-      option4:{
+      option4: {
         title: {
           text: "在Vue中使用echarts",
-          left:"center"
+          left: "center"
         },
-        tooltip: {},
+        tooltip: {
+          trigger: 'item',
+          formatter: function (params, ticket, callback) {
+            return [params.name] + '<br/>项目数量 : ' + [params.data]
+          }
+        },
         xAxis: {
           data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
         },
@@ -151,9 +164,9 @@ export default {
   },
 
   mounted() {
-   
+
   },
   methods: {
-    
+
   }
 }
