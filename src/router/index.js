@@ -68,6 +68,12 @@ export default new Router({
         name: 'tabSwitch',
         component: resolve => require(['@/components/tabSwitch/tabSwitch.vue'], resolve),
       },
+      // textCopy 文本复制
+      {
+        path: 'textCopy',
+        name: 'textCopy',
+        component: resolve => require(['@/components/textCopy/textCopy.vue'], resolve),
+      },
     ]
   }]
 })
