@@ -5,11 +5,8 @@ export default {
     };
   },
   watch: {
-      data:{
-          handler(newVlaue,oldValue){
-            this.drawLinerGraph(this.id,newVlaue);
-          },
-          deep:true
+      data(newVlaue){
+        this.drawLinerGraph(this.id,newVlaue);
       }
   },
   props:['id','data'],
