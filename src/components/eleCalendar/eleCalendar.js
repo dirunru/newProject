@@ -12,6 +12,7 @@ export default {
     },
     components: {
         eleCalendar
+        
     },
     methods: {
       renderContent(h,parmas) {
