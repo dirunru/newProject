@@ -74,6 +74,12 @@ export default new Router({
         name: 'textCopy',
         component: resolve => require(['@/components/textCopy/textCopy.vue'], resolve),
       },
+       // vueEcharts vue项目引入echarts
+       {
+        path: 'vueEcharts',
+        name: 'vueEcharts',
+        component: resolve => require(['@/components/vueEcharts/vueEcharts.vue'], resolve),
+      },
     ]
   }]
 })

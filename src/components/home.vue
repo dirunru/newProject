@@ -39,7 +39,7 @@
                 </template>
                 <el-menu-item-group>
                   <el-menu-item index="/textCopy">textCopy文本复制</el-menu-item>
-                  <el-menu-item index="">待定</el-menu-item>
+                  <el-menu-item index="/vueEcharts">vue引入echarts</el-menu-item>
                   <el-menu-item index="">待定</el-menu-item>
                   <el-menu-item index="">待定</el-menu-item>
                   <el-menu-item index="">待定</el-menu-item>
@@ -122,7 +122,7 @@
   .homeMain {
     position: fixed;
     top: 60px;
-    width: 100%;
+    width: 95%;
     left: 200px;
   }
 

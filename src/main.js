@@ -6,14 +6,17 @@ import router from './router'
 import Cookies from 'Cookies'
 import animated from  'animate.css'
 import ElementUi from 'element-ui'
+import Echarts from 'echarts'
 import 'bootstrap3/dist/css/bootstrap.css'
 import 'bootstrap3/dist/js/bootstrap.js'
 import $ from 'jquery'
 
 
+Vue.prototype.echarts = Echarts
 Vue.prototype.Cookies = Cookies
 Vue.use(ElementUi)
 Vue.use(animated)
+Vue.use(Echarts)
 
 Vue.config.productionTip = false
 
