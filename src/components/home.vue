@@ -117,6 +117,7 @@
     width: 100%;
     background: #B3C0D1;
     line-height: 60px;
+    z-index:3;
   }
 
   .homeMain {
