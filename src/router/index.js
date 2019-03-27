@@ -80,6 +80,18 @@ export default new Router({
         name: 'vueEcharts',
         component: resolve => require(['@/components/vueEcharts/vueEcharts.vue'], resolve),
       },
+      // time 引入倒计时组件
+       {
+        path: 'time',
+        name: 'time',
+        component: resolve => require(['@/components/time/time.vue'], resolve),
+      },
+      // timeStart 开始计时
+      {
+        path: 'timeStart',
+        name: 'timeStart',
+        component: resolve => require(['@/components/timeStart/timeStart.vue'], resolve),
+      },
     ]
   }]
 })

@@ -40,8 +40,8 @@
                 <el-menu-item-group>
                   <el-menu-item index="/textCopy">textCopy文本复制</el-menu-item>
                   <el-menu-item index="/vueEcharts">vue引入echarts</el-menu-item>
-                  <el-menu-item index="">待定</el-menu-item>
-                  <el-menu-item index="">待定</el-menu-item>
+                  <el-menu-item index="/time">倒计时</el-menu-item>
+                  <el-menu-item index="/timeStart">timeStart开始倒计时</el-menu-item>
                   <el-menu-item index="">待定</el-menu-item>
                 </el-menu-item-group>
               </el-submenu>
