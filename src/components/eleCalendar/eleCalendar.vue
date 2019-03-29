@@ -1,6 +1,13 @@
 <template>
-  <div>
-    <ele-calendar class="calendar" @pick="clickChange" :render-content="renderContent" :data="datedef" :prop="prop"></ele-calendar>
+  <div style="overfloe-y:auto">
+    <el-row :gutter="20">
+      <el-col :span="10">
+        <ele-calendar @pick="clickChange" :render-content="renderContent" :data="datedef" :prop="prop"></ele-calendar>
+      </el-col>
+      <el-col :span="12">
+        <calendar2></calendar2>
+      </el-col>
+    </el-row>
   </div>
 </template>
 

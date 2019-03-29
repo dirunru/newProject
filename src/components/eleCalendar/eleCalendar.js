@@ -1,4 +1,5 @@
 import eleCalendar from 'ele-calendar'
+import calendar2 from '../../common/calendar/calendar2.vue'
 import 'ele-calendar/dist/vue-calendar.css'
 export default {
   data() {
@@ -13,12 +14,14 @@ export default {
           "content": 666,
           "cid": null
         },
-      ]
+      ],
+      prop: 'date' ,//对应日期字段名,
     }
   },
-  prop: 'date' ,//对应日期字段名,
+
   components: {
-    eleCalendar
+    eleCalendar,
+    calendar2
   },
   methods: {
     renderContent(h, parmas) {
