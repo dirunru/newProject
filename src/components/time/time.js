@@ -2,7 +2,7 @@ import countDown from "../../common/countDown/countDown.vue"
 export default {
   data () {
     return {
-        endTime:'1553764144'
+        endTime:'1553864144'
     };
   },
 

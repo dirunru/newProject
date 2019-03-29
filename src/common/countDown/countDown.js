@@ -1,23 +1,15 @@
 export default {
   data() {
     return {
-      day:'00',
-      hour:'00',
-      min:'00',
-      sec:'00'
+      day: '00',
+      hour: '00',
+      min: '00',
+      sec: '00'
     }
   },
   props: {
     endTime: {
       type: String,
-      default: ''
-    },
-    endText: {
-      type: String,
-      default: '已结束'
-    },
-    callback: {
-      type: Function,
       default: ''
     }
   },
@@ -40,8 +32,6 @@ export default {
           hour = hour < 10 ? "0" + hour : hour;
           min = min < 10 ? "0" + min : min;
           sec = sec < 10 ? "0" + sec : sec;
-          let format = '';
-          format = `${day}天${hour}小时${min}分${sec}秒`;
           self.day = day;
           self.hour = hour;
           self.min = min;
@@ -50,16 +40,10 @@ export default {
           clearInterval(timer);
           self.day = '00';
           self.hour = '00';
-          self.min ='00';
+          self.min = '00';
           self.sec = '00';
-          self._callback();
         }
       }, 1000);
-    },
-    _callback() {
-      if (this.callback && this.callback instanceof Function) {
-        this.callback(...this);
-      }
     }
   }
 }

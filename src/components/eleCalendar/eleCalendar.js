@@ -13,10 +13,10 @@ export default {
           "content": 666,
           "cid": null
         },
-      ],
-      prop: 'date' //对应日期字段名
+      ]
     }
   },
+  prop: 'date' ,//对应日期字段名,
   components: {
     eleCalendar
   },
@@ -24,22 +24,10 @@ export default {
     renderContent(h, parmas) {
       const loop = data => {
         return (
-          data.defvalue.value ? ( < div > < div > {
-              data.defvalue.text
-            } < /div>  <
-            span style = "color:red" > {
-              "￥" + data.defvalue.value.content
-            } < /span> < /
-            div > ) : < div > {
-            data.defvalue.text
-          } < /div >
+          data.defvalue.value ? ( <div> <div> {data.defvalue.text} </div><span style = "color:red" > { "￥" + data.defvalue.value.content} </span> </div > ) : <div> {data.defvalue.text} </div >
         )
       }
-      return ( <
-        div style = "min-height:60px;" > {
-          loop(parmas)
-        } <
-        /div>
+      return ( < div style = "min-height:60px;" > {loop(parmas)} </div>
       );
     },
     clickChange(data, event, row, dome) {

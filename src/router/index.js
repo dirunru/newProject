@@ -91,7 +91,7 @@ export default new Router({
         path: 'timeStart',
         name: 'timeStart',
         component: resolve => require(['@/components/timeStart/timeStart.vue'], resolve),
-      },
+      }
     ]
   }]
 })

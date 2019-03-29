@@ -1,5 +1,5 @@
 <template>
-  <span :endTime="endTime" :callback="callback">
+  <span :endTime="endTime">
     <slot>
       <p>
         <span>{{day}}</span><b>&nbsp;:&nbsp;</b>

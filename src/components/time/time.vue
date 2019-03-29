@@ -1,6 +1,6 @@
 <template>
   <div>
-    <count-down :endTime="endTime" :callback="callback"></count-down>
+    <count-down :endTime="endTime" ></count-down>
   </div>
 </template>
 

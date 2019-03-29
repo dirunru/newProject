@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>项目尝试功能列表</title>
-    <link href="static/Resources/element-ui/index.css" rel="stylesheet" />
-  </head>
-  <body>
-    
-    <div id="app"></div>
-    <!-- 引入百度地图Api -->
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=8u5QSZ5kGwK4HP75rVVblaRW49pKR1HC&callback=init"></script>
-    <script src="static/Resources/vue.js"></script>
-    <script src="static/Resources/router.min.js"></script>
-    <script src="static/Resources/axios.min.js"></script>
-    <script src="static/Resources/cookie.min.js"></script>
-    <script src="static/Resources/element-ui/index.js"></script>
-    <script src="static/Resources/jquery.min.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>项目尝试功能列表</title>
+  <link href="static/Resources/element-ui/index.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div id="app"></div>
+  <!-- 引入百度地图Api -->
+  <script type="text/javascript"
+    src="http://api.map.baidu.com/api?v=2.0&ak=8u5QSZ5kGwK4HP75rVVblaRW49pKR1HC&callback=init"></script>
+  <script src="static/Resources/vue.js"></script>
+  <script src="static/Resources/router.min.js"></script>
+  <script src="static/Resources/axios.min.js"></script>
+  <script src="static/Resources/cookie.min.js"></script>
+  <script src="static/Resources/element-ui/index.js"></script>
+  <script src="static/Resources/jquery.min.js"></script>
+</body>
+<script>
+  fnResize();
+  window.onresize = function () {
+    fnResize();
+  }
+  function fnResize() {
+    var deviceWidth = document.documentElement.clientWidth || window.innerWidth;
+    if (deviceWidth >= 750) {
+      deviceWidth = 750;
+    }
+    if (deviceWidth <= 320) {
+      deviceWidth = 320;
+    }
+    document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px';
+  }
+  // 100px=1rem
+
+</script>
+
 </html>
