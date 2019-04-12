@@ -51,7 +51,7 @@
                   <span slot="title">导航四</span>
                 </template>
                 <el-menu-item-group>
-                  <el-menu-item index="">待定</el-menu-item>
+                  <el-menu-item index="/dragAndDrop">拖拽</el-menu-item>
                   <el-menu-item index="">待定</el-menu-item>
                   <el-menu-item index="">待定</el-menu-item>
                   <el-menu-item index="">待定</el-menu-item>

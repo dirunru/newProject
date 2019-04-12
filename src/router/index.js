@@ -97,6 +97,12 @@ export default new Router({
         path: 'imgView',
         name: 'imgView',
         component: resolve => require(['@/components/imgView/imgView.vue'], resolve),
+      },
+      // 拖拽
+      {
+        path: 'dragAndDrop',
+        name: 'dragAndDrop',
+        component: resolve => require(['@/components/dragAndDrop/dragAndDrop.vue'], resolve),
       }
     ]
   }]
