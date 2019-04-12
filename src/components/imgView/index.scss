@@ -1,0 +1,19 @@
+#imgView {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.viewer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}

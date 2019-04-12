@@ -91,6 +91,12 @@ export default new Router({
         path: 'timeStart',
         name: 'timeStart',
         component: resolve => require(['@/components/timeStart/timeStart.vue'], resolve),
+      },
+       // imgView
+       {
+        path: 'imgView',
+        name: 'imgView',
+        component: resolve => require(['@/components/imgView/imgView.vue'], resolve),
       }
     ]
   }]

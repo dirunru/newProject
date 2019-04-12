@@ -42,7 +42,7 @@
                   <el-menu-item index="/vueEcharts">vue引入echarts</el-menu-item>
                   <el-menu-item index="/time">倒计时</el-menu-item>
                   <el-menu-item index="/timeStart">timeStart开始倒计时</el-menu-item>
-                  <el-menu-item index="">待定</el-menu-item>
+                  <el-menu-item index="/imgView">imgView图片查看器</el-menu-item>
                 </el-menu-item-group>
               </el-submenu>
               <el-submenu index="4">
