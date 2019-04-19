@@ -1,16 +1,30 @@
+
 export default {
-  data () {
-    return {
-    };
+  data(){
+      return{
+          active: 0,
+          steps:[{
+              title:"添加课程"
+          },{
+              title:"添加班级"
+          },{
+              title:"上课时间"
+          }]
+      }
   },
+  created(){
 
-  components: {},
+  },
+  mounted(){ },
+  components:{
 
-  computed: {},
-
-  created(){},
-
-  mounted(){},
-
-  methods: {}
+  },
+  methods:{
+      next() {
+          if (this.active++ > 2) this.active = 0;
+      },
+      prev(){
+          if (this.active-- < 0) this.active = 2;
+      }
+  }
 }
