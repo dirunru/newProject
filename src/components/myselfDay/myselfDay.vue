@@ -59,8 +59,10 @@
         var months = calender_Date.getMonth();
         months = months + 1;
         calender_Date.setMonth(months);
-        calender_Date.setDate(0)
+        calender_Date.setDate(0);
+        console.log("返回上个月有多少天：",calender_Date.getDate());
         return calender_Date.getDate();
+        
       },
       getlastDates: function (calenderdDate) { //传入正常的Date（）类型数据
         var curDate = calenderdDate;

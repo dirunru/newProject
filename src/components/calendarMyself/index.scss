@@ -1,0 +1,48 @@
+
+  .date {
+    width:1000px;
+    height: 600px;
+    color: #333;
+
+    .month {
+      font-size: 24px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .weekdays {
+      display: flex;
+      font-size: 28px;
+      margin-top: 28px;
+
+      li {
+        flex: 1;
+        text-align: center;
+      }
+    }
+
+    .days {
+      display: flex;
+
+      li {
+        flex: 1;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 10px;
+        line-height: 60px;
+
+        .active {
+          display: inline-block;
+          width: 60px;
+          height: 60px;
+          color: #fff;
+          border-radius: 50%;
+          background-color: #fa6854;
+        }
+
+        .other-month {
+          color: #e4393c;
+        }
+      }
+    }
+  }

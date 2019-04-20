@@ -109,6 +109,12 @@ export default new Router({
         path: 'myselfDay',
         name: 'myselfDay',
         component: resolve => require(['@/components/myselfDay/myselfDay.vue'], resolve),
+      },
+       // 尝试日历
+       {
+        path: 'calendarMyself',
+        name: 'calendarMyself',
+        component: resolve => require(['@/components/calendarMyself/calendarMyself.vue'], resolve),
       }
     ]
   }]
