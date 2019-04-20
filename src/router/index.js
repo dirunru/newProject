@@ -103,6 +103,12 @@ export default new Router({
         path: 'dragAndDrop',
         name: 'dragAndDrop',
         component: resolve => require(['@/components/dragAndDrop/dragAndDrop.vue'], resolve),
+      },
+       // 自制日历
+       {
+        path: 'myselfDay',
+        name: 'myselfDay',
+        component: resolve => require(['@/components/myselfDay/myselfDay.vue'], resolve),
       }
     ]
   }]

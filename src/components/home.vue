@@ -52,7 +52,7 @@
                 </template>
                 <el-menu-item-group>
                   <el-menu-item index="/dragAndDrop">拖拽</el-menu-item>
-                  <el-menu-item index="">待定</el-menu-item>
+                  <el-menu-item index="/myselfDay">自制日历</el-menu-item>
                   <el-menu-item index="">待定</el-menu-item>
                   <el-menu-item index="">待定</el-menu-item>
                   <el-menu-item index="">待定</el-menu-item>
