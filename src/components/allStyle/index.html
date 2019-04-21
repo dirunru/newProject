@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数组方法的区别</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // map不改变原数组，会将处理过的数据组成一个新的数组
+
+    var arr = new Array(),
+        arrNew = new Array();
+
+    arr = [1, 2, 3, 4, 5, 6];
+
+    arrNew = arr.map((item, index, a) => {
+
+        // console.log(item,index,a) //子元素，索引，原数组
+
+        return item * item
+
+    })
+
+    console.log(arr); //[1, 2, 3, 4, 5, 6]
+
+    console.log(arrNew); //[1, 4, 9, 16, 25, 36]
+</script>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr1 = [{
+                "class_id": 1,
+                "class_name": "班级一",
+                "student_num": 30,
+                "create_time": 1554184804,
+                "campus_id": 10,
+                "campus_name": "北京校区003",
+                "class_remark": "一班",
+                "student": 8,
+                "assistant_id": "38839,45822",
+                "assistant_phone_num": "13611069355,15514209607"
+            },
+            {
+                "class_id": 3,
+                "class_name": "班级三",
+                "student_num": 30,
+                "create_time": 1554779081,
+                "campus_id": 1,
+                "campus_name": "null",
+                "class_remark": "三班",
+                "student": 6,
+                "assistant_id": "3317,38839",
+                "assistant_phone_num": "123,13611069355"
+            },
+            {
+                "class_id": 7,
+                "class_name": "班级四",
+                "student_num": 30,
+                "create_time": 1554779681,
+                "campus_id": 1,
+                "campus_name": "null",
+                "class_remark": "四班",
+                "student": 7,
+                "assistant_id": "614",
+                "assistant_phone_num": "15652200161"
+            },
+            {
+                "class_id": 8,
+                "class_name": "班级wu",
+                "student_num": 50,
+                "create_time": 1554802300,
+                "campus_id": 2,
+                "campus_name": "呀拉索",
+                "class_remark": "5班",
+                "student": 2,
+                "assistant_id": "6,26504",
+                "assistant_phone_num": "13683040458,15600800591"
+            },
+            {
+                "class_id": 17,
+                "class_name": "trtr",
+                "student_num": 45,
+                "create_time": 1555469693,
+                "campus_id": 10,
+                "campus_name": "北京校区003",
+                "class_remark": "null",
+                "student": 8,
+                "assistant_id": null,
+                "assistant_phone_num": null
+            },
+            {
+                "class_id": 18,
+                "class_name": "yyy",
+                "student_num": 54,
+                "create_time": 1555471646,
+                "campus_id": 10,
+                "campus_name": "北京校区003",
+                "class_remark": "null",
+                "student": 2,
+                "assistant_id": "45822",
+                "assistant_phone_num": "15514209607"
+            },
+            {
+                "class_id": 19,
+                "class_name": "高数一班",
+                "student_num": 23,
+                "create_time": 1555472025,
+                "campus_id": 13,
+                "campus_name": "通天塔1212",
+                "class_remark": "null",
+                "student": 6,
+                "assistant_id": "45822",
+                "assistant_phone_num": "15514209607"
+            }
+        ];
+        var arr2 = [];
+        arr1.map(item => {
+            arr2.push(Object.assign({}, {}, {
+                campus_id: item.campus_id,
+                campus_name: item.campus_name,
+                children: []
+            }))
+        })
+        console.log("arr2", arr2);
+        let obj = {};
+        const arr3 = arr2.reduceRight((item, next) => {
+            obj[next.campus_id] ? '' : obj[next.campus_id] = true && item.push(next);
+            return item
+        }, []);
+        console.log("去重后的数组arr3",arr3);
+        arr3.forEach(item=>{
+            arr1.filter(i=>{
+                if(item.campus_id == i.campus_id){
+                    item.children.push(i)
+                }
+            })
+        });
+        console.log(arr3)
+
+        
+    </script>
+</body>
+
+</html>
