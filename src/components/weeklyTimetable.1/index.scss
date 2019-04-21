@@ -1,0 +1,98 @@
+.weeklyTimetable {
+    padding-bottom: 20px;
+
+    .left {
+        width: 220px;
+        table {
+            border: 1px solid #EDEEF4;
+
+            th {
+                background: #F5F5F9;
+                height: 42px;
+                border-right: solid 1px #EDEEF4;
+                border-bottom: solid 1px #EDEEF4;
+                font-size: 13px;
+                color: #666666;
+                font-weight: normal;
+
+                &:last-child {
+                    border-right: none;
+                }
+            }
+
+            tr {
+                td {
+                    border-right: solid 1px #EDEEF4;
+                    border-bottom: solid 1px #EDEEF4;
+                    font-size: 13px;
+                    color: #333333;
+                    text-align: center;
+                }
+                &:last-child {
+                    border-right: none;
+                }
+                .weekItem {
+                    height: 150px;
+                    text-align: center;
+
+                    .date {
+                        display: inline-block;
+                        width: 100%;
+                        color: red;
+                    }
+                }
+
+                .timeSlot {
+                    height: 150px;
+
+                    p {
+                        width: 100%;
+                        height: 50px;
+                        border-bottom: 1px solid #EDEEF4;
+                        line-height: 50px;
+
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+                    }
+
+                }
+
+                .timeCourse {
+                    width: 220px;
+                    height: 150px;
+
+                    p {
+                        width: 100%;
+                        height: 50px;
+                        border-bottom: 1px solid #EDEEF4;
+
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+
+                        .courseText {
+                            display: block;
+                            height: 25px;
+                            font-size: 13px;
+                            line-height: 25px;
+                        }
+
+                        .code {
+                            display: inline-block;
+                            width: 100px;
+                            height: 18px;
+                            padding: 0 5px;
+                            border-radius: 18px;
+                            background: #ffe3e7;
+                            color: #ef334e;
+                            font-size: 13px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
