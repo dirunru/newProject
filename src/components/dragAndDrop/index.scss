@@ -1,68 +1,77 @@
 .stepLine {
-    width: 600px;
-    margin: 0 auto;
+  width: 600px;
+  margin: 0 auto;
 
-    ul {
-        display: flex;
+  ul {
+    display: flex;
 
-        .stepItem {
-            width: 33.3%;
+    .stepItem {
+      width: 33.3%;
 
-            .circle {
-                display: inline-block;
-                width: 18px;
-                height: 18px;
-                border-radius: 50%;
-                background: #CCCCCC;
-                color: #ffffff;
-                text-align: center;
-                line-height: 18px;
-            }
+      .circle {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #CCCCCC;
+        color: #ffffff;
+        text-align: center;
+        line-height: 18px;
+      }
 
-            // 进行中
-            .circle-red {
-                background: #ef334e;
-            }
+      // 进行中
+      .circle-red {
+        background: #ef334e;
+      }
 
-            .text {
-                margin-left: 5px;
-                font-size: 13px;
-                color: #CCCCCC;
-            }
+      .text {
+        margin-left: 5px;
+        font-size: 13px;
+        color: #CCCCCC;
+      }
 
-            // 进行中
-            .text-red {
-                color: #ef334e;
-            }
+      // 进行中
+      .text-red {
+        color: #ef334e;
+      }
 
-            .dottedLine {
-                display: inline-block;
-                width: 40%;
-                border-top: dashed 1px #CCCCCC;
-                vertical-align: middle;
-                margin-left: 5px;
-            }
+      .dottedLine {
+        display: inline-block;
+        width: 40%;
+        border-top: dashed 1px #CCCCCC;
+        vertical-align: middle;
+        margin-left: 5px;
+      }
 
-            .dottedLine-red {
-                border-color: red;
-            }
+      .dottedLine-red {
+        border-color: red;
+      }
 
-            i {
-                vertical-align: middle;
-                color: #CCCCCC;
-                font-size: 15px;
-            }
+      i {
+        vertical-align: middle;
+        color: #CCCCCC;
+        font-size: 15px;
+      }
 
-            .i-red {
-                color: #ef334e;
-            }
+      .i-red {
+        color: #ef334e;
+      }
 
-        }
     }
+  }
 }
 
 .bottom {
-    width: 100%;
-    margin-top: 100px;
-    text-align: center;
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+}
+
+
+img {
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  height: 200px;
+  background-repeat: round;
 }

@@ -11,11 +11,15 @@
         </li>
       </ul>
     </div>
+    <img :src="imgSrc">
+    <avatar-cutter v-if="showCutter" return-type="url" @cancel="showCutter = false" @enter="uploadAvatar">
+    </avatar-cutter>
     <!-- 按钮 -->
     <div class="bottom">
       <el-button type="primary" @click="next">{{active>2?"确定":"下一步"}}</el-button>
       <el-button type="cancel" @click="prev">取消</el-button>
     </div>
+    
   </div>
 </template>
 
