@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var aa = null;
+        function check(data) {
+            if (aa && !aa && aa.length > 0) {
+                console.log('不等于空')
+            }
+        };
+        check(aa);
+        console.log("0",!!0);
+        console.log("null",!!null);
+        console.log("undefined",!!undefined);
+        console.log("空对象",!!'')
+        console.log("空对象",!{});
+        console.log("空数组",![]);
+    </script>
+</body>
+
+</html>
