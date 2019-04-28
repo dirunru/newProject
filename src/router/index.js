@@ -121,7 +121,13 @@ export default new Router({
         path: 'vueQuillEditor',
         name: 'vueQuillEditor',
         component: resolve => require(['@/components/vueQuillEditor/vueQuillEditor.vue'], resolve),
-      }
+      },
+      // selectAll
+      {
+        path: 'selectAll',
+        name: 'selectAll',
+        component: resolve => require(['@/components/selectAll/selectAll.vue'], resolve),
+      },
     ]
   }]
 })
