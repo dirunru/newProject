@@ -115,6 +115,12 @@ export default new Router({
         path: 'calendarMyself',
         name: 'calendarMyself',
         component: resolve => require(['@/components/calendarMyself/calendarMyself.vue'], resolve),
+      },
+      // 富文本vueQuillEditor
+      {
+        path: 'vueQuillEditor',
+        name: 'vueQuillEditor',
+        component: resolve => require(['@/components/vueQuillEditor/vueQuillEditor.vue'], resolve),
       }
     ]
   }]

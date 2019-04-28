@@ -54,7 +54,7 @@
                   <el-menu-item index="/dragAndDrop">拖拽</el-menu-item>
                   <el-menu-item index="/myselfDay">自制日历</el-menu-item>
                   <el-menu-item index="/calendarMyself">练习日历</el-menu-item>
-                  <el-menu-item index="">待定</el-menu-item>
+                  <el-menu-item index="/vueQuillEditor">富文本</el-menu-item>
                   <el-menu-item index="">待定</el-menu-item>
                 </el-menu-item-group>
               </el-submenu>
