@@ -7,7 +7,14 @@
         <el-checkbox v-for="city in cities" :label="city" :key="city">{{city}}</el-checkbox>
       </el-checkbox-group>
     </div>
-   
+    <!-- selected和checkBox结合 -->
+
+    <el-select v-model="value5" multiple placeholder="请选择" @change.self="selectChecked">
+      <el-option v-for="item in options" :key="item.value" :value="item.label">
+        <span>{{item.label}}</span>
+        <el-checkbox style="float:right" v-model="item.selected"></el-checkbox>
+      </el-option>
+    </el-select>
   </div>
 </template>
 
