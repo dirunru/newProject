@@ -12785,7 +12785,7 @@
 }
 
 .el-checkbox+.el-checkbox {
-  margin-left: 30px
+  /* margin-left: 30px */
 }
 
 .el-checkbox-button__inner {

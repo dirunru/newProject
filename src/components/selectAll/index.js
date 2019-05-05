@@ -1,4 +1,6 @@
 const cityOptions = ['上海', '北京', '广州', '深圳'];
+import checkBox from "../../common/checkBox/checkBox.vue";
+import baseCalendar from "../../common/base_calendar/calendar.vue";
 export default {
   data() {
     return {
@@ -30,7 +32,22 @@ export default {
         selected: false
       }],
       value5: [],
+
+
+      // 日历组件的数据
+      arr2: [],
+      arr: [{
+        date: "2018/8/1",
+        className: "mark1"
+      }, {
+        date: "2018/8/13",
+        className: "mark2"
+      }],
     };
+  },
+  components: {
+    checkBox,
+    baseCalendar
   },
   mounted() {},
   methods: {
@@ -45,6 +62,33 @@ export default {
       let checkedCount = value.length;
       this.checkAll = checkedCount === this.cities.length;
       this.isIndeterminate = checkedCount > 0 && checkedCount < this.cities.length;
-    }
+    },
+    // 日历组件
+    initData(data) { //初始化数据 获取班级课程列表
+      var startTime = new Date(data.startTiem.split('/')[0], data.startTiem.split('/')[1] - 1, data.startTiem.split('/')[2]).getTime();
+      var endTime = new Date(data.endTime.split('/')[0], data.endTime.split('/')[1] - 1, data.endTime.split('/')[2]).getTime();
+    },
+    clickDay(data) {
+      this.showMonthBtn = true;
+      this.$emit('clickDay', data)
+      console.log("选中了", data); //选中某天
+    },
+    clickToday(data) {
+      // this.showMonthBtn = true;
+      console.log("跳到了本月今天", data); //跳到了本月
+      // 拉取今天课程
+      // 更新课程列表
+    },
+    changeDate(data) {
+      this.nowMonth = parseInt(data.split('/')[1]) - 1;
+      var myDate = new Date();
+      var fristDay = (new Date(myDate.getFullYear(), parseInt(this.nowMonth), 1)).getTime(); //月日历中第一天
+      var lastDay = (new Date(myDate.getFullYear(), parseInt(this.nowMonth + 1), 0)).getTime(); //月日历中最后一天
+      this.$emit('changeMonth', {
+        startTime: fristDay,
+        endTime: lastDay
+      })
+      console.log("左右点击切换月份", data); //左右点击切换月份
+    },
   }
 };

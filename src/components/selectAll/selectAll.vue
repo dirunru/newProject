@@ -15,6 +15,14 @@
         <el-checkbox style="float:right" v-model="item.selected"></el-checkbox>
       </el-option>
     </el-select>
+
+    <!-- checkbox的组件 -->
+    <check-box></check-box>
+
+    <!-- 基础日历组件 -->
+    <base-calendar ref="Calendar" :markDateMore="arr" :markDate="arr2" @isToday="clickToday" agoDayHide="1530115221"
+      @choseDay="clickDay" @changeMonth="changeDate" @timeSlot="initData">
+    </base-calendar>
   </div>
 </template>
 

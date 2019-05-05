@@ -1,0 +1,91 @@
+.checkBox {
+    margin-bottom: 30px;
+    width: 320px;
+
+    .el-checkbox {
+        display: block;
+        line-height: 32px;
+    }
+
+    .checkContent {
+        position: relative;
+        width: calc(100% - 20px);
+        border: solid 1px #dddddd;
+        border-radius: 2px;
+        line-height: 32px;
+        min-height: 32px;
+        margin-bottom: 5px;
+        padding-right:20px;
+        cursor: text;
+
+        .dropIcon {
+            position: absolute;
+            cursor: pointer;
+            transition: 0.3s;
+            right:10px;
+            top:calc(50% - 13px / 2) ;
+        }
+        .rotately{
+            transform: rotate(-180deg);   
+        }
+        .optionItem {
+            display: inline-block;
+            line-height: 25px;
+            box-sizing: border-box;
+            border-color: transparent;
+            margin: 3px 0 3px 6px;
+            padding: 0 5px;
+            background-color: #f0f2f5;
+            color: #909399;
+            font-size: 12px;
+            border-radius: 5px;
+
+            .close {
+                display: inline-block;
+                border-radius: 50%;
+                cursor: pointer;
+                font-size: 8px;
+                height: 12px;
+                width: 12px;
+                line-height: 12px;
+                text-align: center;
+                background: #c0c4cc;
+                vertical-align: middle;
+                color: #f0f2f5;
+                margin-left: 2px;
+                margin-top: -2px;
+                transition: 0.5s;
+
+                &:hover {
+                    background: #909399;
+                }
+            }
+        }
+    }
+
+    .dropDownBox {
+        padding: 5px 10px;
+        background: #ffffff;
+        box-shadow: 0 0 2px #dddddd;
+        transition: 0.3s;
+        max-height:200px;
+        overflow: auto;
+    }
+    .dropDownBox::-webkit-scrollbar {/*滚动条整体样式*/
+        width: 5px;     /*高宽分别对应横竖滚动条的尺寸*/
+        height: 1px;
+    }
+    .dropDownBox::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 5px #ddd;
+        -moz-box-shadow: inset 0 0 5px #ddd;
+        box-shadow: inset 0 0 5px #ddd;
+        background: #999999;
+    }
+    .dropDownBox::-webkit-scrollbar-track {/*滚动条里面轨道*/
+        -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        border-radius: 10px;
+    }
+}
