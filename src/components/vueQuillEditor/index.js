@@ -20,7 +20,7 @@ export default {
     onEditorFocus() {}, // 获得焦点事件
     onEditorChange() {}, // 内容改变事件
     saveHtml: function (event) {
-      alert(this.content);
+      // alert(this.content);
     }
   }
 }
