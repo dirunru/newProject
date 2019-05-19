@@ -8,7 +8,7 @@
             @change="onEditorChange($event)">
         </quill-editor>
         <el-button v-on:click="saveHtml" style="margin-top:20px">保存</el-button>
-        <div v-html="content"></div>
+        <div v-html="content"> </div>
     </div> 
 </template>
 <script>
