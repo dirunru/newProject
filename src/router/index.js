@@ -122,6 +122,12 @@ export default new Router({
         name: 'vueQuillEditor',
         component: resolve => require(['@/components/vueQuillEditor/vueQuillEditor.vue'], resolve),
       },
+       // 富文本vueWangEdit
+       {
+        path: 'vueWangEdit',
+        name: 'vueWangEdit',
+        component: resolve => require(['@/components/vueWangEdit/vueWangEdit.vue'], resolve),
+      },
       // selectAll
       {
         path: 'selectAll',
