@@ -29,9 +29,8 @@
       var websiteEditorElem = document.getElementById('websiteEditorElem');
       var show_box = document.getElementById('show_box');
       var phoneEditor = new wangEdit(websiteEditorElem)
-      phoneEditor.onchange = function () {
-        this.formData.phone = phoneEditor.$txt.html();
-        console.log('this.formData.phone: ', this.formData.phone);
+      phoneEditor.onchange = function () {;
+        console.log('this.formData.phone: ', phoneEditor.html());
         show_box.html(this.formData.phone)
       }
       phoneEditor.create()
