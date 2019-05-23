@@ -63,7 +63,7 @@
                             <el-form-item label="正文" require prop="roominfo">
                               <el-input type="textarea" placeholder="介绍一下自己和期待租房的价位、位置、装修、室友要求等..." v-model="form.roominfo"></el-input>
                               <div id="editorElem" style="text-align:left"></div>
-                              <button v-on:click="getContent">查看内容</button>
+                              <el-button v-on:click="getContent">查看内容</el-button>
 
                             </el-form-item>
                               <el-form-item>
