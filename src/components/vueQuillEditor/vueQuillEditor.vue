@@ -9,6 +9,10 @@
         </quill-editor>
         <el-button v-on:click="saveHtml" style="margin-top:20px">保存</el-button>
         <div v-html="content"> </div>
+        <h1>{{name + ':' + age}}</h1>
+        <h3>{{other}}</h3>
+        <el-button @click="selfName('jj')">mutation</el-button>
+        <el-button @click="selfAge">+</el-button>
     </div> 
 </template>
 <script>

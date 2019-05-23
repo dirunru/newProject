@@ -14,6 +14,8 @@ import 'bootstrap3/dist/js/bootstrap.js'
 import $ from 'jquery'
 import Viewer from 'v-viewer'
 import 'viewerjs/dist/viewer.css'
+import store from './store/index.js';
+
 
 
 import 'wangeditor/release/wangEditor.min.css'
@@ -40,6 +42,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

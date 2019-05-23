@@ -1,3 +1,4 @@
+import { mapState,mapMutations,mapGetters,mapActions} from 'vuex'
 export default {
   name: 'App',
   data() {
@@ -9,11 +10,14 @@ export default {
     }
   },
   computed: {
+    ...mapState(['name','age','other']),
+    ...mapGetters(['other']),
     editor() {
       return this.$refs.myQuillEditor.quill;
     },
   },
   methods: {
+    ...mapMutations(['selfName','selfAge']),//改变的方法
     onEditorReady(editor) { // 准备编辑器
     },
     onEditorBlur() {}, // 失去焦点事件
