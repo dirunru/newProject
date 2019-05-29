@@ -192,6 +192,7 @@
       //       that.editor.txt.html(this.data.course_content)
       //     }
       //   },
+      // class="w-e-text-container bottomContentDetail"
 
         editor.customConfig.onchange = (html) => {
           this.editorContent = html
