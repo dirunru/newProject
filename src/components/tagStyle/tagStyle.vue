@@ -1,21 +1,20 @@
 <template>
   <div>
-    <div class="box"
-         @click="show = !show">
-      <transition-group name="fade">
+    <div class="box">
         <item v-for="(item,index) in target"
               class="item"
               :msg="item.name"
               :key="index"
               @rm="remove(item,index)">
         </item>
-      </transition-group>
       <input type="text"
              class="inputTag"
              v-model="tagName"
-             @keyup.enter="save">
+             @keyup.enter="save"
+             @focus="show = true">
       <i class='pointer'
          style="float:right;line-height:32px"
+         @click="show = !show"
          :class="[show?'el-icon-arrow-down':'el-icon-arrow-up']"></i>
     </div>
     <div class="boxContent"
@@ -74,7 +73,7 @@
       save() {
         let obj = {};
         obj.name = this.tagName;
-        this.sources.push(obj);
+        // this.sources.push(obj);
         this.target.push(obj);
         this.tagName = '';
       }
@@ -106,7 +105,6 @@
   }
 
   .inputTag {
-    border: solid 1px red;
     min-width: 30px;
   }
 }
