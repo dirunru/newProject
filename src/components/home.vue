@@ -5,7 +5,10 @@
       <el-container>
         <el-scrollbar class="slider">
           <el-aside>
-            <el-menu class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" router>
+            <el-menu class="el-menu-vertical-demo"
+                     @open="handleOpen"
+                     @close="handleClose"
+                     router>
               <el-submenu index="1">
                 <template slot="title">
                   <i class="el-icon-location"></i>
@@ -57,6 +60,7 @@
                   <el-menu-item index="/vueQuillEditor">富文本</el-menu-item>
                   <el-menu-item index="/selectAll">selectAll</el-menu-item>
                   <el-menu-item index="/vueWangEdit">vueWangEdit</el-menu-item>
+                  <el-menu-item index="/tagStyle">tagStyle</el-menu-item>
                 </el-menu-item-group>
               </el-submenu>
             </el-menu>
@@ -112,90 +116,89 @@
 
 </script>
 <style scoped>
-  .homeHead {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #B3C0D1;
-    line-height: 60px;
-    z-index:3;
-  }
+.homeHead {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #b3c0d1;
+  line-height: 60px;
+  z-index: 3;
+}
 
-  .homeMain {
-    position: fixed;
-    top: 60px;
-    width: 95%;
-    left: 200px;
-  }
+.homeMain {
+  position: fixed;
+  top: 60px;
+  width: 95%;
+  left: 200px;
+}
 
-  .slider {
-    position: fixed;
-    top: 60px;
-    left: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    width: 200px;
-    height: 100%;
-    min-height: 600px;
-    margin-bottom: 50px;
-    /* border-top: 1px solid #273140; */
-    border-bottom: 1px solid #3e495a;
-    /* overflow-y: auto; */
-    overflow: hidden;
-    z-index: 3;
-    padding-bottom: 60px;
-  }
+.slider {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 200px;
+  height: 100%;
+  min-height: 600px;
+  margin-bottom: 50px;
+  /* border-top: 1px solid #273140; */
+  border-bottom: 1px solid #3e495a;
+  /* overflow-y: auto; */
+  overflow: hidden;
+  z-index: 3;
+  padding-bottom: 60px;
+}
 
-  .slider::-webkit-scrollbar {
-    /*滚动条整体样式*/
-    width: 0px;
-    /*高宽分别对应横竖滚动条的尺寸*/
-    height: 4px;
-  }
+.slider::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 0px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 4px;
+}
 
-  .slider::-webkit-scrollbar-thumb {
-    /*滚动条里面小方块*/
-    border-radius: 5px;
-    box-shadow: inset 0 0 5px #fff;
-    -webkit-box-shadow: inset 0 0 5px #fff;
-    -moz-box-shadow: inset 0 0 5px #fff;
-    background: #fff;
-  }
+.slider::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px #fff;
+  -webkit-box-shadow: inset 0 0 5px #fff;
+  -moz-box-shadow: inset 0 0 5px #fff;
+  background: #fff;
+}
 
-  .slider::-webkit-scrollbar-track {
-    /*滚动条里面轨道*/
-    box-shadow: inset 0 0 5px #fff;
-    -webkit-box-shadow: inset 0 0 5px #fff;
-    -moz-box-shadow: inset 0 0 5px #fff;
-    border-radius: 0;
-    background: #fff;
-  }
+.slider::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px #fff;
+  -webkit-box-shadow: inset 0 0 5px #fff;
+  -moz-box-shadow: inset 0 0 5px #fff;
+  border-radius: 0;
+  background: #fff;
+}
 
-  .slider::scrollbar {
-    /*滚动条整体样式*/
-    width: 0px;
-    /*高宽分别对应横竖滚动条的尺寸*/
-    height: 4px;
-  }
+.slider::scrollbar {
+  /*滚动条整体样式*/
+  width: 0px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 4px;
+}
 
-  .slider::scrollbar-thumb {
-    /*滚动条里面小方块*/
-    border-radius: 5px;
-    box-shadow: inset 0 0 5px #fff;
-    -webkit-box-shadow: inset 0 0 5px #fff;
-    -moz-box-shadow: inset 0 0 5px #fff;
-    background: #fff;
-  }
+.slider::scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px #fff;
+  -webkit-box-shadow: inset 0 0 5px #fff;
+  -moz-box-shadow: inset 0 0 5px #fff;
+  background: #fff;
+}
 
-  .slider::scrollbar-track {
-    /*滚动条里面轨道*/
-    box-shadow: inset 0 0 5px #fff;
-    -webkit-box-shadow: inset 0 0 5px #fff;
-    -moz-box-shadow: inset 0 0 5px #fff;
-    border-radius: 0;
-    background: #fff;
-  }
-
+.slider::scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px #fff;
+  -webkit-box-shadow: inset 0 0 5px #fff;
+  -moz-box-shadow: inset 0 0 5px #fff;
+  border-radius: 0;
+  background: #fff;
+}
 </style>
