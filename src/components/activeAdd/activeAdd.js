@@ -15,11 +15,11 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          let obj={}
+          let obj = {}
           this.dynamicValidateForm.domains.filter((i, idx) => {
             obj[`mountingExtends${(idx != 0 ? idx + 1 : '')}`] = i;
           })
-          console.log('组成的数据',obj)
+          console.log('组成的数据', obj)
         } else {
           console.log('error submit!!');
           return false;
