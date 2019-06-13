@@ -11,6 +11,7 @@
              class="inputTag"
              v-model="tagName"
              @keyup.enter="save"
+             @blur="save"
              @focus="show = true">
       <i class='pointer'
          style="float:right;line-height:32px"
@@ -97,10 +98,19 @@
       },
       save() {
         let obj = {};
-        obj.name = this.tagName;
-        // this.sources.push(obj);
-        this.target.push(obj);
-        this.tagName = '';
+         if (this.tagName) {
+            obj.name = this.tagName;
+            this.target.push(obj);
+            this.tagName = '';
+          // if (this.tagNameFormat(this.tagName)) {//正则验证
+          //   obj.name = this.tagName;
+          //   this.target.push(obj);
+          //   this.tagName = '';
+          // }else{
+          //   this.$message.error('输入的标签应由字母数字，中文，下划线，短杠组成的1~10个字符');
+          //   this.tagName = ''
+          // }
+        }
       },
       bindAccount(data) {
         this.popData.data = data;
