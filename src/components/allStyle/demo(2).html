@@ -1,0 +1,83 @@
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--<meta charset="UTF-8">-->
+<!--<meta name="viewport"-->
+<!--content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+<!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+<!--<title>Document</title>-->
+<!--<link rel="shortcut icon" href="https://files.cnblogs.com/files/dashucoding/favicon.ico">-->
+<!--&lt;!&ndash;<script src="//common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>&ndash;&gt;-->
+<!--<script src="./jquery-1.8.3.min.js"></script>-->
+<!--<script src="https://files.cnblogs.com/files/jingmoxukong/canvas-nest.min.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<canvas id="c_n9" width="1920" height="990" style="position: fixed;top: 0px;left: 0px;z-index: -1;opacity: 0.5;display: none;"></canvas>-->
+<!--<script type="text/javascript">-->
+<!--// var arr=[1,4,2,3,5,6,7,9];-->
+<!--// arr = arr.sort();-->
+<!--// console.log(arr);-->
+<!--// for(var i=1;i<=100;i++){-->
+<!--//     if(i != arr[i-1]){-->
+<!--//         console.log(i)-->
+<!--//         break;-->
+<!--//     }-->
+<!--// }-->
+
+<!--var obj = {-->
+<!--toString:function(){-->
+<!--console.log('toString')-->
+<!--return Object.prototype.toString.call(this)-->
+<!--},-->
+<!--valueOf:function(){-->
+<!--console.log('valueOf')-->
+<!--return Object.prototype.valueOf.call(this)-->
+<!--}-->
+<!--}-->
+<!--// alert(obj);-->
+<!--// alert(+obj);// NaN-->
+<!--// alert(obj=={});//false-->
+<!--// alert(obj==={})//false-->
+<!--// alert(obj=='test')//false-->
+<!--// alert(obj==='test')//false-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
+    <!--<meta name="referrer" content="never" />-->
+    <!--<meta http-equiv="Cache-Control" content="no-transform" />-->
+    <!--<meta http-equiv="Cache-Control" content="no-siteapp" />-->
+    <title>canvas背景图</title>
+    <!--<meta property="og:description" content="用wx.login获取登录凭证code wx.checkSession 小程序 wx.checkSession 校验登陆态 success ：接口调用成功，session_key未过期； fail ：" />-->
+    <!--<link title="RSS" type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/dashucoding/rss"/>-->
+    <!--<link title="RSD" type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/dashucoding/rsd.xml"/>-->
+    <!--<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/dashucoding/wlwmanifest.xml"/>-->
+    <!--<script>var currentBlogId=442141;var currentBlogApp='dashucoding',cb_enable_mathjax=false;var isLogined=false;</script>-->
+</head>
+
+<body>
+    <!--<a name="top"></a>-->
+
+    <!-- 背景动画 -->
+    <canvas id="c_n9" width="1920" height="990"
+        style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas>
+    <script src="https://files.cnblogs.com/files/jingmoxukong/canvas-nest.min.js"></script>
+    <script src="jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+        $.ajax({
+            url: 'https://stats.g.doubleclick.net/r/collect?v=1&aip=1&t=dc&_r=3&tid=UA-84335471-1&cid=705921151.1559803193&jid=583173047&_gid=144929649.1560925495&gjid=1874565145&_v=j76&z=81047054',
+            success: function (data) {
+                console.log(data);
+            }
+        })
+    </script>
+</body>
+
+</html>
