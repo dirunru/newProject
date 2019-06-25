@@ -4,13 +4,15 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Cookies from 'Cookies'
-import animated from  'animate.css'
+import animated from 'animate.css'
 import ElementUi from 'element-ui'
 import Echarts from 'echarts'
 import VueQuillEditor from 'vue-quill-editor'
 import Editor from 'wangeditor'
 import 'bootstrap3/dist/css/bootstrap.css'
 import 'bootstrap3/dist/js/bootstrap.js'
+import './assets/fonts/iconfont.css'
+import './assets/font/font-awesome.css'
 import $ from 'jquery'
 import Viewer from 'v-viewer'
 import 'viewerjs/dist/viewer.css'
@@ -22,7 +24,7 @@ import 'wangeditor/release/wangEditor.min.css'
 import 'quill/dist/quill.core.css'
 import 'quill/dist/quill.snow.css'
 import 'quill/dist/quill.bubble.css'
-  
+
 
 Vue.use(Viewer)
 Viewer.setDefaults({
